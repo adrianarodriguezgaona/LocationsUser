@@ -1,4 +1,6 @@
-﻿using System;
+﻿using B4.PE3.RodriguezA.ViewModels;
+using FreshMvvm;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +12,8 @@ namespace B4.PE3.RodriguezA
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            var mainview = FreshPageModelResolver.ResolvePageModel<MainViewModel>();
+            MainPage = new FreshNavigationContainer(mainview);
         }
 
         protected override void OnStart()
