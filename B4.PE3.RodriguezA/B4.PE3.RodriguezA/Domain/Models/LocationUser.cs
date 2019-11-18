@@ -8,13 +8,8 @@ namespace B4.PE3.RodriguezA.Domain.Models
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public string Latitude { get; set; }
-        public string Longitude { get; set; }
-
-        public string Foto { get; set; }
         public string Color { get; set; }
-        public DateTime DateVisit { get; set; }
+        public ICollection<LocationItem> Items { get; set; } = new List<LocationItem>(); //should never be null
 
-        
     }
 }

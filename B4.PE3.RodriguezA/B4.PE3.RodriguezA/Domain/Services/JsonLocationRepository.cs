@@ -13,62 +13,69 @@ namespace B4.PE3.RodriguezA.Domain.Services
     public class JsonLocationRepository : ILocationUserRepository
     {
         private readonly string _filePath;
+        private readonly JsonSerializerSettings _serializerSettings;
         public JsonLocationRepository()
         {
-            _filePath = Path.Combine(FileSystem.AppDataDirectory, "locationsUser.json");
+            _filePath = Path.Combine(FileSystem.AppDataDirectory, "locationUserLists.json");
+            _serializerSettings = new JsonSerializerSettings
+            {
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            };
         }
-        public bool DatastoreExists => File.Exists(_filePath);
-
-        public async Task<LocationUser> AddLocationUser(LocationUser location)
+        public async Task<LocationUser> AddLocationUserList(LocationUser location)
         {
-            var locationsUser = (await GetAll()).ToList();
-            locationsUser.Add(location);
-            SaveLocationsUserToFile(locationsUser);
-            return await GetLocationUser(location.Id);
+            var locationsUserlists = await GetAllLocationUserlists();
+            locationsUserlists.Add(location);
+            SaveLocationsUserToJsonFile(locationsUserlists);
+            return await GetLocationUserList(location.Id);
         }
 
-        private void SaveLocationsUserToFile(IEnumerable<LocationUser> locationsUser)
+        public async Task<LocationUser> DeleteLocationUserList(Guid id)
         {
-            string sitesJson = JsonConvert.SerializeObject(locationsUser);
-            File.WriteAllText(_filePath, sitesJson);
+            var locationUserlists = await GetAllLocationUserlists();
+            var locationUserlistToRemove = locationUserlists.FirstOrDefault(e => e.Id == id);
+            locationUserlists.Remove(locationUserlistToRemove);
+            SaveLocationsUserToJsonFile(locationUserlists);
+            return locationUserlistToRemove;
         }
 
-        public async Task<LocationUser> DeleteLocationUser(int id)
+        public async Task<LocationUser> GetLocationUserList(Guid id)
         {
-            var locationsUser = (await GetAll()).ToList();
-            var locationToRemove = locationsUser.FirstOrDefault(l => l.Id == id);
-            locationsUser.Remove(locationToRemove);
-            SaveLocationsUserToFile(locationsUser);
-            return locationToRemove;
+            var locationUserLists = await GetAllLocationUserlists();
+            return locationUserLists.FirstOrDefault(e => e.Id == id);
         }
 
-        public async Task<IQueryable<LocationUser>>GetAll()
+
+        public async Task<LocationUser> UpdateLocationUserList(LocationUser location)
+        {
+            await DeleteLocationUserList(location.Id);
+            return await AddLocationUserList(location);
+        }
+
+        public async Task<IQueryable<LocationUser>> GetMyLocationLists()
+        {
+            var LocationUserLists = await GetAllLocationUserlists();
+            return LocationUserLists.AsQueryable();
+        }
+        protected async Task<IList<LocationUser>> GetAllLocationUserlists()
         {
             try
             {
-                string locationsUserJson = File.ReadAllText(_filePath);
-                var locationsUser = JsonConvert.DeserializeObject<IEnumerable<LocationUser>>(locationsUserJson);
-                var locationsUserQuery = locationsUser.AsQueryable();
-                return await Task.FromResult(locationsUserQuery);
+                string locationUserListsJson = File.ReadAllText(_filePath);
+                var locationUserLists = JsonConvert.DeserializeObject<IList<LocationUser>>(locationUserListsJson);
+                return await Task.FromResult(locationUserLists);  //using Task.FromResult to have atleast one await in this async method
             }
-            catch
+            catch  //return empty collection on file not found, deserialization error, ...
             {
-                return (new List<LocationUser>()).AsQueryable();
+                return (new List<LocationUser>());
             }
         }
 
-        public async Task<LocationUser> GetLocationUser(int id)
+        protected void SaveLocationsUserToJsonFile(IEnumerable<LocationUser> locationsUser)
         {
-            var locationsUser = await GetAll();
-            return locationsUser.FirstOrDefault(l => l.Id == id);
+            string locationsUserJson = JsonConvert.SerializeObject(locationsUser, Formatting.Indented, _serializerSettings);
+            File.WriteAllText(_filePath, locationsUserJson);
         }
-
-        public async Task<LocationUser> UpdateLocationUser(LocationUser location)
-        {
-            await DeleteLocationUser(location.Id);
-            return await AddLocationUser(location);
-        }
-
 
     }
 }
