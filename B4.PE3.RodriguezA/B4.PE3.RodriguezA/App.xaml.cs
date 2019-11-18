@@ -12,8 +12,7 @@ namespace B4.PE3.RodriguezA
         {
             InitializeComponent();
 
-            var mainview = FreshPageModelResolver.ResolvePageModel<MainViewModel>();
-            MainPage = new FreshNavigationContainer(mainview);
+            MainPage = new FreshNavigationContainer(FreshPageModelResolver.ResolvePageModel<MainViewModel>());
         }
 
         protected override void OnStart()

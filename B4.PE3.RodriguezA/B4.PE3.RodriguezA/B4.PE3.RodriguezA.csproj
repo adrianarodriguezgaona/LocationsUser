@@ -18,10 +18,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Domain\Pages\LocationUserPage.xaml">
+    <EmbeddedResource Update="Pages\BusyView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Domain\Pages\MainPage.xaml">
+    <EmbeddedResource Update="Pages\LocationItemPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\LocationUserPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\MainPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

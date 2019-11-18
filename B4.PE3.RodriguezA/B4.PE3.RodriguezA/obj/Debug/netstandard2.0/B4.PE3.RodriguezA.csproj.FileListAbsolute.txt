@@ -3,9 +3,13 @@ C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\bin\Debug\netstanda
 C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\bin\Debug\netstandard2.0\B4.PE3.RodriguezA.pdb
 C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\obj\Debug\netstandard2.0\B4.PE3.RodriguezA.csprojAssemblyReference.cache
 C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\obj\Debug\netstandard2.0\B4.PE3.RodriguezA.csproj.CoreCompileInputs.cache
 C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\obj\Debug\netstandard2.0\B4.PE3.RodriguezA.AssemblyInfoInputs.cache
 C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\obj\Debug\netstandard2.0\B4.PE3.RodriguezA.AssemblyInfo.cs
 C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\obj\Debug\netstandard2.0\B4.PE3.RodriguezA.dll
 C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\obj\Debug\netstandard2.0\B4.PE3.RodriguezA.pdb
+C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\obj\Debug\netstandard2.0\XamlC.stamp
+C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\obj\Debug\netstandard2.0\Pages\LocationUserPage.xaml.g.cs
+C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\obj\Debug\netstandard2.0\Pages\MainPage.xaml.g.cs
+C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\obj\Debug\netstandard2.0\Pages\LocationItemPage.xaml.g.cs
+C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\obj\Debug\netstandard2.0\Pages\BusyView.xaml.g.cs
