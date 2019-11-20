@@ -3,26 +3,55 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:bhv="clr-namespace:B4.PE3.RodriguezA.Behaviors"
              mc:Ignorable="d"
+             Title="{Binding PageTitle}" BackgroundColor="{Binding Color}"
+             x:Name="page"
              x:Class="B4.PE3.RodriguezA.Pages.LocationUserPage">
    
         <ContentPage.ToolbarItems>
-                <ToolbarItem Text="Save" Command="{Binding SaveCommand}"></ToolbarItem>
+        <ToolbarItem Text="Save"  IconImageSource="{OnPlatform UWP=ok.png}" Command="{Binding SaveLocationUserCommand}"></ToolbarItem>
         </ContentPage.ToolbarItems>
         <ContentPage.Content>
                 <ScrollView>
                     <StackLayout Style="{StaticResource MainLayout}">
                         <Label Text="Name" />
-                        <Entry Text="{Binding Name}" Placeholder="Enter location name" Keyboard="Text" />
+                        <Entry Text="{Binding Name}" Placeholder="Enter location name" Keyboard="Text" TextColor="Blue"/>
                         <Label Text="Theme Color" />
                         <Picker  Title="Select your color"  x:Name="pickerColor" ItemsSource="{Binding Colors}" SelectedItem="{Binding Color}" />
-                        <Label Text= "Your theme color: {Binding Color}" />
-                        
-                        <Label Text="Visitdate" />
-                        <DatePicker Date="{Binding DateVisit}" />
-                       
-                        
-                    </StackLayout>
+                                               
+                <Button Text="Add new item" 
+                            Command="{Binding OpenItemPageCommand}" 
+                            HorizontalOptions="End" Margin="0,20,0,0" />
+                <ListView ItemsSource="{Binding LocationItems}"
+                              HasUnevenRows="False" RowHeight="60">
+                    <ListView.Behaviors>
+                        <bhv:EventToCommandBehavior 
+                                EventName="ItemTapped"  
+                                Command="{Binding OpenItemPageCommand}"
+                                EventArgsConverter="{StaticResource ItemTappedEventArgsConv}" />
+                    </ListView.Behaviors>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.ContextActions>
+                                    <MenuItem Command="{Binding BindingContext.OpenItemPageCommand, Source={x:Reference page}}" 
+                                                  CommandParameter="{Binding .}" 
+                                                  Text="Edit" />
+                                    <MenuItem Command="{Binding BindingContext.DeleteItemCommand, Source={x:Reference page}}"
+                                                  CommandParameter="{Binding .}"
+                                                  Text="Delete" IsDestructive="True" />
+                                </ViewCell.ContextActions>
+                                <StackLayout StyleClass="listitem">
+                                    <Label Text="{Binding ItemName}" 
+                                               VerticalOptions="Center" HorizontalOptions="StartAndExpand" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </StackLayout>
                 </ScrollView>
         </ContentPage.Content>
        

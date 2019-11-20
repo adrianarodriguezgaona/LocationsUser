@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:views="clr-namespace:B4.PE3.RodriguezA.Pages"
              xmlns:bhv="clr-namespace:B4.PE3.RodriguezA.Behaviors"
-             mc:Ignorable="d"
+             mc:Ignorable="d" 
              Title="Locations Lists"
              x:Name="page"
              x:Class="B4.PE3.RodriguezA.Pages.MainPage">
@@ -39,7 +39,7 @@
                                               IsDestructive="True" />
                                 </ViewCell.ContextActions>
                                 <StackLayout StyleClass="listitem">
-                                    
+
                                     <Label Text="{Binding Name}" 
                                            VerticalOptions="Center" HorizontalOptions="StartAndExpand" />
                                 </StackLayout>
