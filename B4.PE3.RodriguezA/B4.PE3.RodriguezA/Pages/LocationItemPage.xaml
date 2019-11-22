@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"  
              xmlns:views="clr-namespace:B4.PE3.RodriguezA.Pages"
+             
              mc:Ignorable="d"
              Title="{Binding PageTitle}"         
              x:Class="B4.PE3.RodriguezA.Pages.LocationItemPage">
@@ -21,8 +23,9 @@
                     <Label Text="Item Name" />
                     <Entry Text="{Binding ItemName}" Placeholder="Describe the item here" />
                     <StackLayout Orientation="Horizontal">
-                        <Button Text="Save your gps location" Command="{Binding SaveGeolocationItemCommand}"></Button>
-                        <Button Text="Take a picture" Command="{Binding TakeAPictureCommand}"></Button>
+                        <buttons:SfButton CornerRadius="20" WidthRequest="180" HeightRequest="50" Margin="20" Text="Save your gps location" Command="{Binding SaveGeolocationItemCommand}"></buttons:SfButton>
+                        <buttons:SfButton CornerRadius="20" WidthRequest="180" HeightRequest="50" Margin="20" Text="Take a picture" Command="{Binding TakeAPictureCommand}"></buttons:SfButton>
+                        <Label Text="{Binding MyLocation}"/>
                     </StackLayout>
                     <DatePicker  Date="{Binding VisitDate}" />
                     <Image Source="{Binding PhotoSource}"/>
