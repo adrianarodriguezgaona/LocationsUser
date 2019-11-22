@@ -1,12 +1,16 @@
 ﻿using B4.PE3.RodriguezA.Domain.Models;
 using B4.PE3.RodriguezA.Domain.Services;
 using FreshMvvm;
+using Plugin.Geolocator;
+using Plugin.Media;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
+using System.Threading.Tasks;
+using Plugin.Media.Abstractions;
 
 namespace B4.PE3.RodriguezA.ViewModels
 {
@@ -17,6 +21,7 @@ namespace B4.PE3.RodriguezA.ViewModels
 
         public LocationItemViewModel()
         {
+
             _locationRepository = new JsonLocationRepository();
            
         }
@@ -74,16 +79,16 @@ namespace B4.PE3.RodriguezA.ViewModels
         //    get { return !string.IsNullOrWhiteSpace(ItemDescriptionError); }
         //}
 
-        private bool itemIsComplete;
-        public bool ItemIsComplete
-        {
-            get { return itemIsComplete; }
-            set
-            {
-                itemIsComplete = value;
-                RaisePropertyChanged(nameof(ItemIsComplete));
-            }
-        }
+        //private bool itemIsComplete;
+        //public bool ItemIsComplete
+        //{
+        //    get { return itemIsComplete; }
+        //    set
+        //    {
+        //        itemIsComplete = value;
+        //        RaisePropertyChanged(nameof(ItemIsComplete));
+        //    }
+        //}
 
         private DateTime visitDate;
         public DateTime VisitDate
@@ -112,11 +117,18 @@ namespace B4.PE3.RodriguezA.ViewModels
         }
 
 
-        private string photo;
-        public string Photo
+        private string myLocation;
+        public string MyLocation
         {
-            get { return photo; }
-            set { photo = value; RaisePropertyChanged(nameof(Photo)); }
+            get { return myLocation; }
+            set { myLocation = value; RaisePropertyChanged(nameof(MyLocation)); }
+        }
+
+        private string photoSource;
+        public string PhotoSource
+        {
+            get { return photoSource; }
+            set { photoSource = value; RaisePropertyChanged(nameof(PhotoSource)); }
         }
 
         #endregion
@@ -141,21 +153,83 @@ namespace B4.PE3.RodriguezA.ViewModels
         private void LoadItemState()
         {
             ItemName = _locationItem.ItemName;
-            ItemIsComplete = _locationItem.VisitDate.HasValue;
             VisitDate = _locationItem.VisitDate ?? DateTime.Now;
+            PhotoSource = _locationItem.PhotoSource;
+            MyLocation = _locationItem.MyLocation;
         }
+
+       
+
+        public ICommand SaveGeolocationItemCommand => new Command(
+            async () =>
+            {
+                var locator = CrossGeolocator.Current;
+                locator.DesiredAccuracy = 50;
+                var position = await locator.GetPositionAsync(TimeSpan.FromSeconds(20));
+
+                Longitude = position.Longitude.ToString();
+                Latitude = position.Latitude.ToString();
+                MyLocation = $"{Latitude} . {Longitude}";
+
+                //var output = string.Format("Time: {0} \nLat: {1} \nLong: {2} \nAltitude: {3} \nAltitude Accuracy: {4} \nAccuracy: {5} \nHeading: {6} \nSpeed: {7}",
+                //    position.Timestamp, position.Latitude, position.Longitude,
+                //    position.Altitude, position.AltitudeAccuracy, position.Accuracy, position.Heading, position.Speed);
+
+                Debug.WriteLine(Longitude);
+
+            });
+
+        public ICommand TakeAPictureCommand => new Command(
+            async () =>
+
+        {
+            await CrossMedia.Current.Initialize();
+
+            if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
+            {
+                await Application.Current.MainPage.DisplayAlert("No Camera", ":( No camera available.", "OK");
+                return;
+            }
+
+            var file = await CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions
+            {
+                Directory = "Sample",
+                Name = $"{ItemName}.jpg",
+                PhotoSize = PhotoSize.Small
+            });
+
+            if (file == null)
+                return;
+
+            await Application.Current.MainPage.DisplayAlert("File Location", file.Path, "OK");
+
+            PhotoSource = file.Path;
+
+            var source = ImageSource.FromStream(() =>
+            {
+                var stream = file.GetStream();
+                return stream;
+            });
+
+           
+        });
+
 
         private void SaveItemState()
         {
             _locationItem.ItemName = ItemName;
-            _locationItem.VisitDate = ItemIsComplete ? new DateTime?(VisitDate) : null;
+            _locationItem.VisitDate = new DateTime?(VisitDate);
+            _locationItem.Latitude = Latitude;
+            _locationItem.Longitude = Longitude;
+            _locationItem.MyLocation = MyLocation;
+            _locationItem.PhotoSource = PhotoSource;
         }
 
-        public ICommand SaveBucketItemCommand => new Command(
+        public ICommand SaveLocationUserItemCommand => new Command(
             async () => {
                 try
                 {
-                    SaveItemState();
+                    SaveItemState(); 
       
                         if (_locationItem.Id == Guid.Empty)
                         {
