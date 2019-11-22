@@ -37,8 +37,26 @@
     <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\plugin.permissions\3.0.0.12\lib\uap10.0.10240\Plugin.Permissions.dll">
+      <PackagePath>Plugin.Permissions.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.licensing\17.3.0.28\lib\uap10.0\Syncfusion.Licensing.dll">
+      <PackagePath>Syncfusion.Licensing.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.buttons\17.3.0.28\lib\uap10.0\Syncfusion.Buttons.XForms.UWP.dll">
+      <PackagePath>Syncfusion.Buttons.XForms.UWP.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.buttons\17.3.0.28\lib\uap10.0\Syncfusion.Buttons.XForms.dll">
+      <PackagePath>Syncfusion.Buttons.XForms.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.core\17.3.0.28\lib\uap10.0\Syncfusion.Core.XForms.UWP.dll">
+      <PackagePath>Syncfusion.Core.XForms.UWP.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.core\17.3.0.28\lib\uap10.0\Syncfusion.Core.XForms.dll">
+      <PackagePath>Syncfusion.Core.XForms.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\system.reactive\4.0.0\lib\uap10.0.16299\System.Reactive.dll">
       <PackagePath>System.Reactive.dll</PackagePath>
@@ -48,6 +66,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\xam.plugin.geolocator\4.5.0.6\lib\uap10.0.10240\Plugin.Geolocator.dll">
       <PackagePath>Plugin.Geolocator.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\xam.plugin.media\4.0.1.5\lib\uap10.0.10240\Plugin.Media.dll">
+      <PackagePath>Plugin.Media.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\xamarin.essentials\1.3.1\lib\uap10.0.16299\Xamarin.Essentials.dll">
       <PackagePath>Xamarin.Essentials.dll</PackagePath>
@@ -210,6 +231,18 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\microsoft.ui.xaml\2.1.190606001\build\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.buttons\17.3.0.28\lib\uap10.0\Syncfusion.Buttons.XForms.UWP\Syncfusion.Buttons.XForms.UWP.xr.xml">
+      <PackagePath>Syncfusion.Buttons.XForms.UWP\Syncfusion.Buttons.XForms.UWP.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.buttons\17.3.0.28\lib\uap10.0\Syncfusion.Buttons.XForms.UWP\Assets\SfButton.ttf">
+      <PackagePath>Syncfusion.Buttons.XForms.UWP\Assets\SfButton.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.buttons\17.3.0.28\lib\uap10.0\Syncfusion.Buttons.XForms.UWP\Assets\sfbutton_Segoe MDL2 Assets.ttf">
+      <PackagePath>Syncfusion.Buttons.XForms.UWP\Assets\sfbutton_Segoe MDL2 Assets.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.core\17.3.0.28\lib\uap10.0\Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml">
+      <PackagePath>Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\xamarin.forms\4.3.0.991211\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>

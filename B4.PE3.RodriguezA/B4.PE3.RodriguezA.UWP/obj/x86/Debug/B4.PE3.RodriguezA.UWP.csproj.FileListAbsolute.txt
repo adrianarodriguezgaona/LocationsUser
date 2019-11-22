@@ -77,3 +77,14 @@ C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\obj\x86\Debug\S
 C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\obj\x86\Debug\System.Reactive\en-US\System.Reactive.Platforms.Windows.Strings_WindowsThreading.resw
 C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\obj\x86\Debug\System.Reactive.pri.xml
 C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\obj\x86\Debug\Plugin.Geolocator.pri.xml
+C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\Plugin.Permissions.dll
+C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\Plugin.Media.dll
+C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\obj\x86\Debug\Plugin.Permissions.pri.xml
+C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\obj\x86\Debug\Plugin.Media.pri.xml
+C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\Syncfusion.Licensing.dll
+C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\Syncfusion.Core.XForms.UWP.dll
+C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\Syncfusion.Core.XForms.dll
+C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\obj\x86\Debug\Syncfusion.Core.XForms.UWP.pri.xml
+C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\Syncfusion.Buttons.XForms.UWP.dll
+C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\Syncfusion.Buttons.XForms.dll
+C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\obj\x86\Debug\Syncfusion.Buttons.XForms.UWP.pri.xml

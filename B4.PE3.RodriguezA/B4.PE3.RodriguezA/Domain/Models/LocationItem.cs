@@ -15,7 +15,8 @@ namespace B4.PE3.RodriguezA.Domain.Models
         public string Latitude { get; set; }
         public string Longitude { get; set; }
         public string PhotoSource { get; set; }
-       
+        public string MyLocation { get; set; }
+
         public DateTime? VisitDate { get; set; }
     }
 }

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "bd33c6d6e6ca0885f7a1b19596d7ced6f83945cd"
+    "signature": "badf2d4d69f14618241159bb006a072f3bdad561"
   },
   "compilationOptions": {},
   "targets": {
@@ -11,7 +11,10 @@
         "dependencies": {
           "FreshMvvm": "3.0.0",
           "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "12.0.3",
+          "Syncfusion.Xamarin.Buttons": "17.3.0.28",
           "Xam.Plugin.Geolocator": "4.5.0.6",
+          "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.3.0.991211"
         },
@@ -40,6 +43,54 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
+      "Plugin.Permissions/3.0.0.12": {
+        "runtime": {
+          "lib/netstandard2.0/Plugin.Permissions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Syncfusion.Licensing/17.3.0.28": {
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "17.3.0.28",
+            "fileVersion": "17.3.0.28"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.Buttons/17.3.0.28": {
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.3.0.28",
+          "Xamarin.Forms": "4.3.0.991211"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Buttons.XForms.dll": {
+            "assemblyVersion": "17.3451.0.28",
+            "fileVersion": "17.3451.0.28"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.Core/17.3.0.28": {
+        "dependencies": {
+          "Syncfusion.Licensing": "17.3.0.28",
+          "Xamarin.Forms": "4.3.0.991211"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Core.XForms.dll": {
+            "assemblyVersion": "17.3451.0.28",
+            "fileVersion": "17.3451.0.28"
+          }
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -81,6 +132,17 @@
       "Xam.Plugin.Geolocator/4.5.0.6": {
         "runtime": {
           "lib/netstandard2.0/Plugin.Geolocator.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Xam.Plugin.Media/4.0.1.5": {
+        "dependencies": {
+          "Plugin.Permissions": "3.0.0.12"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.Media.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -149,6 +211,41 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "Plugin.Permissions/3.0.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VrYqI/ufk3bH6gTP1JJlLByjhS0CHu3riKmdozhX9/qXA9hlvLolmcqKJdyAqpzmrVC74m3ZtirUBIrBxvT1Lw==",
+      "path": "plugin.permissions/3.0.0.12",
+      "hashPath": "plugin.permissions.3.0.0.12.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/17.3.0.28": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QEzu4RChxb/jBtA+XJCO3Kzgg9v7e6/RCqfFNtoQz2F1aWbzn8CXz8mdSiHa/SWptA/wQ7js16P9+e2ZUBXVrg==",
+      "path": "syncfusion.licensing/17.3.0.28",
+      "hashPath": "syncfusion.licensing.17.3.0.28.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.Buttons/17.3.0.28": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wUl5/doPASaW7dyA8viMyfkiXRPDto3rwoiGgY08JqJFMlD+Y/jq2+Y49BgWfztGXQMTxcg8zJsHsYzFhfxFGA==",
+      "path": "syncfusion.xamarin.buttons/17.3.0.28",
+      "hashPath": "syncfusion.xamarin.buttons.17.3.0.28.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.Core/17.3.0.28": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bo/f9ooD6ka2t1ZNAz/2g4q/wGQDm0301j2k1lQGcPwGRD2hxzeC3aJK9PpYaSrb9ZzE79y9PouO8kV8pNklWA==",
+      "path": "syncfusion.xamarin.core/17.3.0.28",
+      "hashPath": "syncfusion.xamarin.core.17.3.0.28.nupkg.sha512"
+    },
     "System.Numerics.Vectors/4.5.0": {
       "type": "package",
       "serviceable": true,
@@ -183,6 +280,13 @@
       "sha512": "sha512-Ro7peBDxsDXPc7J7yLx0ekAcXIfVTAXj/rXiBKiTgZ4Lm7KZJIU8PXOCcI4JztzT3MQrL8Rmka48il/ix0pwoA==",
       "path": "xam.plugin.geolocator/4.5.0.6",
       "hashPath": "xam.plugin.geolocator.4.5.0.6.nupkg.sha512"
+    },
+    "Xam.Plugin.Media/4.0.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-a5l/M2Tl06BqBX/uhM/pr+q1jDkh2tRQr5Ne9rjAuD9VYn5STE+7kVFTzIUNPMnMr9PZLJkWP5WAr/tBN5oepw==",
+      "path": "xam.plugin.media/4.0.1.5",
+      "hashPath": "xam.plugin.media.4.0.1.5.nupkg.sha512"
     },
     "Xamarin.Essentials/1.3.1": {
       "type": "package",

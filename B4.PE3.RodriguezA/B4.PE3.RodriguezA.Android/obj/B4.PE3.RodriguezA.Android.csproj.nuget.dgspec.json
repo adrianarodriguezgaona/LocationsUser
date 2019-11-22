@@ -42,10 +42,6 @@
       "frameworks": {
         "monoandroid90": {
           "dependencies": {
-            "FreshMvvm": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.3, )"
@@ -53,6 +49,10 @@
             "Xam.Plugin.Geolocator": {
               "target": "Package",
               "version": "[4.5.0.6, )"
+            },
+            "Xam.Plugin.Media": {
+              "target": "Package",
+              "version": "[4.0.1.5, )"
             },
             "Xamarin.Android.Support.Core.Utils": {
               "target": "Package",
@@ -147,9 +147,17 @@
               "target": "Package",
               "version": "[12.0.3, )"
             },
+            "Syncfusion.Xamarin.Buttons": {
+              "target": "Package",
+              "version": "[17.3.0.28, )"
+            },
             "Xam.Plugin.Geolocator": {
               "target": "Package",
               "version": "[4.5.0.6, )"
+            },
+            "Xam.Plugin.Media": {
+              "target": "Package",
+              "version": "[4.0.1.5, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",

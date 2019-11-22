@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -52,6 +53,7 @@ namespace B4.PE3.RodriguezA.UWP
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
+
                 Xamarin.Forms.Forms.Init(e);
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
@@ -61,6 +63,10 @@ namespace B4.PE3.RodriguezA.UWP
 
                 // Place the frame in the current Window
                 Window.Current.Content = rootFrame;
+                //List<Assembly> assembliesToInclude = new List<Assembly>();
+                //assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Cards.SfCardViewRenderer).GetTypeInfo().Assembly);
+                //Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+
             }
 
             if (rootFrame.Content == null)

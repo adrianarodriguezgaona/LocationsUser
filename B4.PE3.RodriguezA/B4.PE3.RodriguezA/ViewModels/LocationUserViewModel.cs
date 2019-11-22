@@ -1,4 +1,5 @@
-﻿using B4.PE3.RodriguezA.Domain.Models;
+﻿using B4.PE3.RodriguezA.Constants;
+using B4.PE3.RodriguezA.Domain.Models;
 using B4.PE3.RodriguezA.Domain.Services;
 using FreshMvvm;
 using System;
@@ -80,9 +81,9 @@ namespace B4.PE3.RodriguezA.ViewModels
 
         private void LoadElements()
         {
-            Colors.Add("red"); 
-            Colors.Add("blue");
-            Colors.Add("green");
+            Colors.Add("lime"); 
+            Colors.Add("lightBlue");
+            Colors.Add("lightGreen");
             Colors.Add("orange");
             Colors.Add("aqua");
         }
@@ -124,14 +125,14 @@ namespace B4.PE3.RodriguezA.ViewModels
             {
                 //editing existing bucketlist
                 isNew = false;
-                PageTitle = "Edit Bucket List";
+                PageTitle = "Edit Location List";
                 _currentLocationUser = await _locationUserRepository.GetLocationUserList(_currentLocationUser.Id);
             }
             else
             {
                 //editing brand new bucketlist
                 isNew = true;
-                PageTitle = "New Bucket List";
+                PageTitle = "New Location List";
                 _currentLocationUser = new LocationUser();
                 _currentLocationUser.Id = Guid.NewGuid();
                _currentLocationUser.Items = new List<LocationItem>();
@@ -156,11 +157,10 @@ namespace B4.PE3.RodriguezA.ViewModels
                     }
                     IsBusy = false;
 
-                    //MessagingCenter.Send(this,
-                    //    Constants.MessageNames.BucketSaved, currentBucket);
+                MessagingCenter.Send(this,MessageNames.LocationUserSaved, _currentLocationUser);
 
-                    //await CoreMethods.PopPageModel(false, true);
-                
+                await CoreMethods.PopPageModel(false, true);
+
             }
         );
 
@@ -182,6 +182,7 @@ namespace B4.PE3.RodriguezA.ViewModels
                 await CoreMethods.PushPageModel<LocationItemViewModel>(item, false, true);
             }
         );
+        
 
         public ICommand DeleteItemCommand => new Command<LocationItem>(
             (LocationItem item) => {
@@ -201,9 +202,7 @@ namespace B4.PE3.RodriguezA.ViewModels
             LocationItems = new ObservableCollection<LocationItem>(_currentLocationUser.Items.OrderBy(e => e.ItemName));
         }
 
-        /// <summary>
-        /// Saves the VM properties back to the current bucket
-        /// </summary>
+       
         private void SaveLocationUserState()
         {
             _currentLocationUser.Name = Name;
