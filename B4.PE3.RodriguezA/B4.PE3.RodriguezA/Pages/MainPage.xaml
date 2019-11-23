@@ -17,7 +17,7 @@
     <ContentPage.Content>
         <AbsoluteLayout AbsoluteLayout.LayoutFlags="All"
                         AbsoluteLayout.LayoutBounds="0,0,1,1">
-            <StackLayout>
+            <StackLayout Padding="12">
                 <ListView ItemsSource="{Binding LocationsUser}"
                           HasUnevenRows="False" RowHeight="60" >
                     <ListView.Behaviors>
@@ -39,7 +39,7 @@
                                               IsDestructive="True" />
                                 </ViewCell.ContextActions>
                                 <StackLayout StyleClass="listitem">
-
+                                    <Image Source="icon50.png"/>
                                     <Label Text="{Binding Name}" 
                                            VerticalOptions="Center" HorizontalOptions="StartAndExpand" />
                                 </StackLayout>

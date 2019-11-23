@@ -16,17 +16,17 @@ namespace B4.PE3.RodriguezA.ViewModels
     public  class LocationUserViewModel : FreshBasePageModel
 
     {
-        private ILocationUserRepository _locationUserRepository;
+        private readonly  ILocationUserRepository locationUserRepository;
 
         private LocationUser _currentLocationUser;
         private bool isNew = true;
 
 
-        public LocationUserViewModel()
+        public LocationUserViewModel(ILocationUserRepository locationUserRepository )
         {
             Colors = new List<string>();
             LoadElements();
-            _locationUserRepository = new JsonLocationRepository();
+            this.locationUserRepository = locationUserRepository;
  
         }
         private string pageTitle;
@@ -126,7 +126,7 @@ namespace B4.PE3.RodriguezA.ViewModels
                 //editing existing bucketlist
                 isNew = false;
                 PageTitle = "Edit Location List";
-                _currentLocationUser = await _locationUserRepository.GetLocationUserList(_currentLocationUser.Id);
+                _currentLocationUser = await locationUserRepository.GetLocationUserList(_currentLocationUser.Id);
             }
             else
             {
@@ -149,11 +149,11 @@ namespace B4.PE3.RodriguezA.ViewModels
 
                     if (isNew)
                     {
-                        await _locationUserRepository.AddLocationUserList(_currentLocationUser);
+                        await locationUserRepository.AddLocationUserList(_currentLocationUser);
                     }
                     else
                     {
-                        await _locationUserRepository.UpdateLocationUserList(_currentLocationUser);
+                        await locationUserRepository.UpdateLocationUserList(_currentLocationUser);
                     }
                     IsBusy = false;
 

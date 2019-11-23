@@ -21,15 +21,22 @@
                         AbsoluteLayout.LayoutBounds="0,0,1,1">
                 <StackLayout>
                     <Label Text="Item Name" />
-                    <Entry Text="{Binding ItemName}" Placeholder="Describe the item here" />
+                    <Entry Text="{Binding ItemName}" Placeholder="The locationname here" />
+                    <Label Text="Choose your visitdate:"/>
+                    <DatePicker  Date="{Binding VisitDate}" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal">
-                        <buttons:SfButton CornerRadius="20" WidthRequest="180" HeightRequest="50" Margin="20" Text="Save your gps location" Command="{Binding SaveGeolocationItemCommand}"></buttons:SfButton>
-                        <buttons:SfButton CornerRadius="20" WidthRequest="180" HeightRequest="50" Margin="20" Text="Take a picture" Command="{Binding TakeAPictureCommand}"></buttons:SfButton>
-                        <Label Text="{Binding MyLocation}"/>
+                        <buttons:SfButton CornerRadius="20" WidthRequest="70" HeightRequest="50" Margin="10" BackgroundImage="location.png" Command="{Binding SaveGeolocationItemCommand}"></buttons:SfButton>
+                        <buttons:SfButton CornerRadius="20" WidthRequest="70" HeightRequest="50" Margin="10" BackgroundImage="camara.png" Command="{Binding TakeAPictureCommand}"></buttons:SfButton>
+                        <buttons:SfButton CornerRadius="20" WidthRequest="70" HeightRequest="50" Margin="10" BackgroundImage="google_maps.png" Command="{Binding GoToCommand}"></buttons:SfButton>
+
                     </StackLayout>
-                    <DatePicker  Date="{Binding VisitDate}" />
+                    <Label Text="Gpslocation of this location is:"/>
+                    <Label Text="{Binding MyLocation}" TextColor="Blue"/>
+                    
                     <Image Source="{Binding PhotoSource}"/>
+                   
                 </StackLayout>
+                
             </ScrollView>
             <views:BusyView IsVisible="{Binding IsBusy}" />
         </AbsoluteLayout>

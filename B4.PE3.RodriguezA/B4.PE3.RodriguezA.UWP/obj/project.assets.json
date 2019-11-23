@@ -501,6 +501,20 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/4.3.0.991211": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.3.0.991211"
+        },
+        "compile": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        }
+      },
       "B4.PE3.RodriguezA/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1187,6 +1201,20 @@
         "build": {
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Maps/4.3.0.991211": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.3.0.991211"
+        },
+        "compile": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
         }
       },
       "B4.PE3.RodriguezA/1.0.0": {
@@ -1878,6 +1906,20 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/4.3.0.991211": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.3.0.991211"
+        },
+        "compile": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        }
+      },
       "B4.PE3.RodriguezA/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -2562,6 +2604,20 @@
         "build": {
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Maps/4.3.0.991211": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.3.0.991211"
+        },
+        "compile": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
         }
       },
       "B4.PE3.RodriguezA/1.0.0": {
@@ -3250,6 +3306,20 @@
         "build": {
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Maps/4.3.0.991211": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.3.0.991211"
+        },
+        "compile": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
         }
       },
       "B4.PE3.RodriguezA/1.0.0": {
@@ -3941,6 +4011,20 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/4.3.0.991211": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.3.0.991211"
+        },
+        "compile": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        }
+      },
       "B4.PE3.RodriguezA/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -4627,6 +4711,20 @@
         "build": {
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Maps/4.3.0.991211": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.3.0.991211"
+        },
+        "compile": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
         }
       },
       "B4.PE3.RodriguezA/1.0.0": {
@@ -5316,6 +5414,20 @@
         "build": {
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.Maps/4.3.0.991211": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.3.0.991211"
+        },
+        "compile": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.Maps.dll": {}
         }
       },
       "B4.PE3.RodriguezA/1.0.0": {
@@ -10395,6 +10507,39 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.Maps/4.3.0.991211": {
+      "sha512": "0S7xnE4FA+23BbRKf570eeaJ0pttoPa2SWVt9W9jt+OPU0GM5w1j9hmuY16vAWodElnaLiaLqarr+SjPQoCrKg==",
+      "type": "package",
+      "path": "xamarin.forms.maps/4.3.0.991211",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid81/Xamarin.Forms.Maps.Android.dll",
+        "lib/MonoAndroid81/Xamarin.Forms.Maps.dll",
+        "lib/MonoAndroid81/Xamarin.Forms.Maps.xml",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.Android.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.macOS.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.xml",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.xml",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.xml",
+        "lib/tizen40/Xamarin.Forms.Maps.Tizen.dll",
+        "lib/tizen40/Xamarin.Forms.Maps.dll",
+        "lib/tizen40/Xamarin.Forms.Maps.xml",
+        "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll",
+        "lib/uap10.0/Xamarin.Forms.Maps.UWP.pri",
+        "lib/uap10.0/Xamarin.Forms.Maps.dll",
+        "xamarin.forms.maps.4.3.0.991211.nupkg.sha512",
+        "xamarin.forms.maps.nuspec"
+      ]
+    },
     "B4.PE3.RodriguezA/1.0.0": {
       "type": "project",
       "path": "../B4.PE3.RodriguezA/B4.PE3.RodriguezA.csproj",
@@ -10409,7 +10554,8 @@
       "Xam.Plugin.Geolocator >= 4.5.0.6",
       "Xam.Plugin.Media >= 4.0.1.5",
       "Xamarin.Essentials >= 1.3.1",
-      "Xamarin.Forms >= 4.3.0.991211"
+      "Xamarin.Forms >= 4.3.0.991211",
+      "Xamarin.Forms.Maps >= 4.3.0.991211"
     ]
   },
   "packageFolders": {
@@ -10477,6 +10623,10 @@
             "version": "[1.3.1, )"
           },
           "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[4.3.0.991211, )"
+          },
+          "Xamarin.Forms.Maps": {
             "target": "Package",
             "version": "[4.3.0.991211, )"
           }

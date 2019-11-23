@@ -8,6 +8,7 @@
              mc:Ignorable="d"
              x:Class="B4.PE3.RodriguezA.App">
     <Application.Resources>
+        <StyleSheet Source="/Styles/appstyles.css"></StyleSheet>
         <ResourceDictionary>
              <!--Converters--> 
             <conv:ItemTappedEventArgsConverter x:Key="ItemTappedEventArgsConv" />

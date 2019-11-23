@@ -88,3 +88,6 @@ C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\obj\x86\Debug\S
 C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\Syncfusion.Buttons.XForms.UWP.dll
 C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\Syncfusion.Buttons.XForms.dll
 C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\obj\x86\Debug\Syncfusion.Buttons.XForms.UWP.pri.xml
+C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\Xamarin.Forms.Maps.UWP.dll
+C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\Xamarin.Forms.Maps.dll
+C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\obj\x86\Debug\Xamarin.Forms.Maps.UWP.pri.xml

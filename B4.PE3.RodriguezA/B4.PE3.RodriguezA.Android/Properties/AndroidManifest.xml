@@ -8,6 +8,8 @@
 				android:grantUriPermissions="true">
       <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
 				android:resource="@xml/file_paths"></meta-data>
+      <meta-data android:name="com-google.android.maps.v2.API_KEY" android:value="AIzaSyDDLHFOdAFz_NI_yYCOZHDnxQYHIaN-KY4">
+      </meta-data>
     </provider>
   </application>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />

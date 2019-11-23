@@ -14,20 +14,15 @@ namespace B4.PE3.RodriguezA.ViewModels
 {
     public class MainViewModel : FreshBasePageModel
     {
-        private ILocationUserRepository _locationUserRepository;
-        public ICommand GoToLocationUserPageCommand; 
+        private  readonly ILocationUserRepository locationUserRepository;
+        
 
-        public MainViewModel()
+        public MainViewModel(ILocationUserRepository locationUserRepository)
         {
-            _locationUserRepository = new JsonLocationRepository();
-            //GoToLocationUserPageCommand = new Command(GoToLocationUserPage);
-
+            this.locationUserRepository = locationUserRepository;
+          
         }
 
-        //private async void GoToLocationUserPage(object obj)
-        //{
-        //    await CoreMethods.PushPageModel<LocationUserViewModel>(true);
-        //}
 
         private ObservableCollection<LocationUser> locationsUser;
         public ObservableCollection<LocationUser> LocationsUser
@@ -68,7 +63,7 @@ namespace B4.PE3.RodriguezA.ViewModels
 
         public ICommand DeleteLocationUserCommand => new Command<LocationUser>(
             async (LocationUser location) => {
-                await _locationUserRepository.DeleteLocationUserList(location.Id);
+                await locationUserRepository.DeleteLocationUserList(location.Id);
                 await RefreshlocationsUserLists();
             }
         );
@@ -79,7 +74,7 @@ namespace B4.PE3.RodriguezA.ViewModels
             //get settings, because we need current user Id
             //var settings = await settingsService.GetSettings();
             //get all bucket lists for this user
-            var locationsUser = await _locationUserRepository.GetMyLocationLists();
+            var locationsUser = await locationUserRepository.GetMyLocationLists();
             //bind IEnumerable<Bucket> to the ListView's ItemSource
             LocationsUser = null;    //Important! ensure the list is empty first to force refresh!
             LocationsUser = new ObservableCollection<LocationUser>(locationsUser.OrderBy(e => e.Name));

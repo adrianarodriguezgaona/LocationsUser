@@ -11,19 +11,19 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using System.Threading.Tasks;
 using Plugin.Media.Abstractions;
+using Xamarin.Essentials;
 
 namespace B4.PE3.RodriguezA.ViewModels
 {
     public class LocationItemViewModel :FreshBasePageModel 
     {
         private LocationItem _locationItem;
-        private ILocationUserRepository _locationRepository;
+        private readonly ILocationUserRepository locationRepository;
 
-        public LocationItemViewModel()
+        public LocationItemViewModel(ILocationUserRepository locationRepository)
         {
 
-            _locationRepository = new JsonLocationRepository();
-           
+            this.locationRepository = locationRepository;           
         }
 
         #region Properties
@@ -102,15 +102,15 @@ namespace B4.PE3.RodriguezA.ViewModels
         }
 
 
-        private string longitude;
-        public string Longitude
+        private double longitude;
+        public double Longitude
         {
             get { return longitude; }
             set { longitude = value; RaisePropertyChanged(nameof(Longitude)); }
         }
 
-        private string latitude;
-        public string Latitude
+        private double latitude;
+        public double Latitude
         {
             get { return latitude; }
             set { latitude = value; RaisePropertyChanged(nameof(Latitude)); }
@@ -155,6 +155,8 @@ namespace B4.PE3.RodriguezA.ViewModels
             ItemName = _locationItem.ItemName;
             VisitDate = _locationItem.VisitDate ?? DateTime.Now;
             PhotoSource = _locationItem.PhotoSource;
+            Latitude = _locationItem.Latitude;
+            Longitude = _locationItem.Longitude;
             MyLocation = _locationItem.MyLocation;
         }
 
@@ -167,8 +169,9 @@ namespace B4.PE3.RodriguezA.ViewModels
                 locator.DesiredAccuracy = 50;
                 var position = await locator.GetPositionAsync(TimeSpan.FromSeconds(20));
 
-                Longitude = position.Longitude.ToString();
-                Latitude = position.Latitude.ToString();
+                Longitude = position.Longitude;
+                Latitude = position.Latitude;
+                                
                 MyLocation = $"{Latitude} . {Longitude}";
 
                 //var output = string.Format("Time: {0} \nLat: {1} \nLong: {2} \nAltitude: {3} \nAltitude Accuracy: {4} \nAccuracy: {5} \nHeading: {6} \nSpeed: {7}",
@@ -247,6 +250,16 @@ namespace B4.PE3.RodriguezA.ViewModels
                 }
             }
         );
+
+        public ICommand GoToCommand => new Command(
+            async () =>
+            {
+                await Map.OpenAsync(Latitude, Longitude, new MapLaunchOptions
+                {
+                    Name = ItemName,
+                    NavigationMode = NavigationMode.None
+                });
+            });
 
     }
 }

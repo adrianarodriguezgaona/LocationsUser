@@ -12,8 +12,8 @@ namespace B4.PE3.RodriguezA.Domain.Models
         public Guid LocationUserId { get; set; }
         public LocationUser ParentLocation { get; set; }
         public string ItemName { get; set; }
-        public string Latitude { get; set; }
-        public string Longitude { get; set; }
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
         public string PhotoSource { get; set; }
         public string MyLocation { get; set; }
 

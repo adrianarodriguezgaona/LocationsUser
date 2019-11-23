@@ -85,6 +85,12 @@
     <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\xamarin.forms\4.3.0.991211\lib\uap10.0\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\xamarin.forms.maps\4.3.0.991211\lib\uap10.0\Xamarin.Forms.Maps.UWP.dll">
+      <PackagePath>Xamarin.Forms.Maps.UWP.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\xamarin.forms.maps\4.3.0.991211\lib\uap10.0\Xamarin.Forms.Maps.dll">
+      <PackagePath>Xamarin.Forms.Maps.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\bin\Debug\netstandard2.0\B4.PE3.RodriguezA.dll">
       <PackagePath>B4.PE3.RodriguezA.dll</PackagePath>
     </AppxPackagedFile>
@@ -94,8 +100,8 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\add.png">
-      <PackagePath>Assets\add.png</PackagePath>
+    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\add.png">
+      <PackagePath>add.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
@@ -109,8 +115,20 @@
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\ok.png">
-      <PackagePath>Assets\ok.png</PackagePath>
+    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\camara.png">
+      <PackagePath>camara.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\google_maps.png">
+      <PackagePath>google_maps.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\icon50.png">
+      <PackagePath>icon50.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\location.png">
+      <PackagePath>location.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\ok.png">
+      <PackagePath>ok.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>

@@ -1,4 +1,5 @@
-﻿using B4.PE3.RodriguezA.ViewModels;
+﻿using B4.PE3.RodriguezA.Domain.Services;
+using B4.PE3.RodriguezA.ViewModels;
 using FreshMvvm;
 using System;
 using Xamarin.Forms;
@@ -12,6 +13,8 @@ namespace B4.PE3.RodriguezA
         {
             InitializeComponent();
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MTUyNzA0QDMxMzcyZTMzMmUzME5PemVVY2JiQWtqSHZnLzZtRHRVdVRVc3pxVjU5R1kyN2pGNjNyUnBLSGM9");
+            //Register dependencies
+            FreshIOC.Container.Register<ILocationUserRepository>(new JsonLocationRepository());
 
             MainPage = new FreshNavigationContainer(FreshPageModelResolver.ResolvePageModel<MainViewModel>());
         }

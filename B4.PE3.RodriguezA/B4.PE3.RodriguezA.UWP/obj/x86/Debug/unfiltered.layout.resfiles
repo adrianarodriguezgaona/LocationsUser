@@ -1,9 +1,8 @@
 WinMetadata\Windows.winmd
-Assets\add.png
+add.png
 Assets\LargeTile.scale-100.png
 Assets\LargeTile.scale-200.png
 Assets\LargeTile.scale-400.png
-Assets\ok.png
 Assets\SmallTile.scale-100.png
 Assets\SmallTile.scale-200.png
 Assets\SmallTile.scale-400.png
@@ -32,4 +31,9 @@ App.xbf
 B4.PE3.RodriguezA.UWP.xr.xml
 MainPage.xbf
 Microsoft.UI.Xaml\DensityStyles\Compact.xbf
+camara.png
+google_maps.png
+icon50.png
+location.png
+ok.png
 Properties\Default.rd.xml
