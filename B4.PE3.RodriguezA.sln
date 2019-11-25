@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B4.PE3.RodriguezA.UWP", "B4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B4.PE3.RodriguezA.Android", "B4.PE3.RodriguezA\B4.PE3.RodriguezA.Android\B4.PE3.RodriguezA.Android.csproj", "{3F050349-2AF7-4458-936F-D2FF5208B64B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B4.PE3.RodriguezA", "B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.csproj", "{3C395386-2615-4146-B1D9-4C69DCF841E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "B4.PE3.RodriguezA", "B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.csproj", "{3C395386-2615-4146-B1D9-4C69DCF841E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{C5A1548E-7E52-40D6-9431-A3270B4C1915}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,22 @@ Global
 		{3C395386-2615-4146-B1D9-4C69DCF841E0}.Release|x86.ActiveCfg = Release|Any CPU
 		{3C395386-2615-4146-B1D9-4C69DCF841E0}.Release|x86.Build.0 = Release|Any CPU
 		{3C395386-2615-4146-B1D9-4C69DCF841E0}.Release|x86.Deploy.0 = Release|Any CPU
+		{C5A1548E-7E52-40D6-9431-A3270B4C1915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5A1548E-7E52-40D6-9431-A3270B4C1915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5A1548E-7E52-40D6-9431-A3270B4C1915}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{C5A1548E-7E52-40D6-9431-A3270B4C1915}.Debug|ARM.Build.0 = Debug|Any CPU
+		{C5A1548E-7E52-40D6-9431-A3270B4C1915}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C5A1548E-7E52-40D6-9431-A3270B4C1915}.Debug|x64.Build.0 = Debug|Any CPU
+		{C5A1548E-7E52-40D6-9431-A3270B4C1915}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C5A1548E-7E52-40D6-9431-A3270B4C1915}.Debug|x86.Build.0 = Debug|Any CPU
+		{C5A1548E-7E52-40D6-9431-A3270B4C1915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5A1548E-7E52-40D6-9431-A3270B4C1915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5A1548E-7E52-40D6-9431-A3270B4C1915}.Release|ARM.ActiveCfg = Release|Any CPU
+		{C5A1548E-7E52-40D6-9431-A3270B4C1915}.Release|ARM.Build.0 = Release|Any CPU
+		{C5A1548E-7E52-40D6-9431-A3270B4C1915}.Release|x64.ActiveCfg = Release|Any CPU
+		{C5A1548E-7E52-40D6-9431-A3270B4C1915}.Release|x64.Build.0 = Release|Any CPU
+		{C5A1548E-7E52-40D6-9431-A3270B4C1915}.Release|x86.ActiveCfg = Release|Any CPU
+		{C5A1548E-7E52-40D6-9431-A3270B4C1915}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

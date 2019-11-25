@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace B4.PE3.RodriguezA.Domain.Models
 {
     public class LocationUser

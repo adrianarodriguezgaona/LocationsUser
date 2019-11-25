@@ -178,7 +178,7 @@ namespace B4.PE3.RodriguezA.ViewModels
                 //    position.Timestamp, position.Latitude, position.Longitude,
                 //    position.Altitude, position.AltitudeAccuracy, position.Accuracy, position.Heading, position.Speed);
 
-                Debug.WriteLine(Longitude);
+                //Debug.WriteLine(output);
 
             });
 

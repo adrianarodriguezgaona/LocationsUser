@@ -116,21 +116,21 @@ namespace B4.PE3.RodriguezA.ViewModels
         }
 
         /// <summary>
-        /// Refreshes the currentBucket (to edit) or initializes a new one (to add)
+        /// Refreshes the currentlocationuser (to edit) or initializes a new one (to add)
         /// </summary>
         /// <returns></returns>
         private async Task RefreshLocationUser()
         {
             if (_currentLocationUser != null)
             {
-                //editing existing bucketlist
+                //editing existing locationlist
                 isNew = false;
                 PageTitle = "Edit Location List";
                 _currentLocationUser = await locationUserRepository.GetLocationUserList(_currentLocationUser.Id);
             }
             else
             {
-                //editing brand new bucketlist
+                //editing brand new locationlist
                 isNew = true;
                 PageTitle = "New Location List";
                 _currentLocationUser = new LocationUser();
@@ -171,7 +171,7 @@ namespace B4.PE3.RodriguezA.ViewModels
 
                 if (item == null)
                 {
-                    //new BucketList Item requested, let's make sure to
+                    //new locationuserList Item requested, let's make sure to
                     //pass a reference to the parent Bucket to which the new item will belong
                     item = new LocationItem
                     {
@@ -193,7 +193,7 @@ namespace B4.PE3.RodriguezA.ViewModels
 
 
         /// <summary>
-        /// Loads the currentBucket list properties into the VM properties for display in UI
+        /// Loads the locationuser list properties into the VM properties for display in UI
         /// </summary>
         private void LoadLocationUserState()
         {
