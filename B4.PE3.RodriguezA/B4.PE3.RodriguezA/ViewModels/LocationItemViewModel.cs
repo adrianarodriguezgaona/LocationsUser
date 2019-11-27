@@ -12,6 +12,8 @@ using Xamarin.Forms;
 using System.Threading.Tasks;
 using Plugin.Media.Abstractions;
 using Xamarin.Essentials;
+using FluentValidation;
+using B4.PE3.RodriguezA.Validators;
 
 namespace B4.PE3.RodriguezA.ViewModels
 {
@@ -19,11 +21,13 @@ namespace B4.PE3.RodriguezA.ViewModels
     {
         private LocationItem _locationItem;
         private readonly ILocationUserRepository locationRepository;
+        private IValidator _locationItemValidator;
 
         public LocationItemViewModel(ILocationUserRepository locationRepository)
         {
 
-            this.locationRepository = locationRepository;           
+            this.locationRepository = locationRepository;
+            _locationItemValidator = new LocationItemValidator();
         }
 
         #region Properties
@@ -62,33 +66,23 @@ namespace B4.PE3.RodriguezA.ViewModels
             }
         }
 
-        //private string itemDescriptionError;
-        //public string ItemDescriptionError
-        //{
-        //    get { return itemDescriptionError; }
-        //    set
-        //    {
-        //        itemDescriptionError = value;
-        //        RaisePropertyChanged(nameof(ItemDescriptionError));
-        //        RaisePropertyChanged(nameof(ItemDescriptionErrorVisible));
-        //    }
-        //}
+        private string itemNameError;
+        public string ItemNameError
+        {
+            get { return itemNameError; }
+            set
+            {
+                itemNameError = value;
+                RaisePropertyChanged(nameof(ItemNameError));
+                RaisePropertyChanged(nameof(ItemNameErrorVisible));
+            }
+        }
 
-        //public bool ItemDescriptionErrorVisible
-        //{
-        //    get { return !string.IsNullOrWhiteSpace(ItemDescriptionError); }
-        //}
+        public bool ItemNameErrorVisible
+        {
+            get { return !string.IsNullOrWhiteSpace(ItemNameError); }
+        }
 
-        //private bool itemIsComplete;
-        //public bool ItemIsComplete
-        //{
-        //    get { return itemIsComplete; }
-        //    set
-        //    {
-        //        itemIsComplete = value;
-        //        RaisePropertyChanged(nameof(ItemIsComplete));
-        //    }
-        //}
 
         private DateTime visitDate;
         public DateTime VisitDate
@@ -232,7 +226,9 @@ namespace B4.PE3.RodriguezA.ViewModels
             async () => {
                 try
                 {
-                    SaveItemState(); 
+                    SaveItemState();
+                    if (Validate(_locationItem))
+                    {
       
                         if (_locationItem.Id == Guid.Empty)
                         {
@@ -241,7 +237,8 @@ namespace B4.PE3.RodriguezA.ViewModels
                         }
                         //use coremethodes to Pop pages in FreshMvvm!
                         await CoreMethods.PopPageModel(_locationItem, false, true);
-                   
+                    }
+
                 }
                 catch (Exception ex)
                 {
@@ -260,6 +257,22 @@ namespace B4.PE3.RodriguezA.ViewModels
                     NavigationMode = NavigationMode.None
                 });
             });
+
+        private bool Validate(LocationItem item)
+        {
+            var validationResult = _locationItemValidator.Validate(item);
+            //loop through error to identify properties
+            foreach (var error in validationResult.Errors)
+            {
+                if (error.PropertyName == nameof(item.ItemName))
+                {
+                    ItemNameError = error.ErrorMessage;
+                }
+            }
+            return validationResult.IsValid;
+        }
+
+
 
     }
 }

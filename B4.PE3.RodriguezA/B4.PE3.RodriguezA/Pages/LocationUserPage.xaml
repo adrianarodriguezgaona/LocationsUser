@@ -18,7 +18,10 @@
                     <StackLayout Style="{StaticResource MainLayout}">
                         <Label Text="Name" />
                         <Entry Text="{Binding Name}" Placeholder="Enter location name" Keyboard="Text" TextColor="Blue"/>
-                        <Label Text="Theme Color" />
+                <Label Text="{Binding LocationUserNameError}" 
+                           IsVisible="{Binding LocationUserNameErrorVisible}" 
+                           StyleClass="errormessage" />
+                <Label Text="Theme Color" />
                         <Picker  Title="Select your color"  x:Name="pickerColor" ItemsSource="{Binding Colors}" SelectedItem="{Binding Color}" />
 
                         <buttons:SfButton CornerRadius="20" WidthRequest="150" HeightRequest="50" Margin="20" Text="Add new item" 

@@ -19,9 +19,12 @@
         <AbsoluteLayout>
             <ScrollView AbsoluteLayout.LayoutFlags="All"
                         AbsoluteLayout.LayoutBounds="0,0,1,1">
-                <StackLayout>
+                <StackLayout Padding="12">
                     <Label Text="Item Name" />
                     <Entry Text="{Binding ItemName}" Placeholder="The locationname here" />
+                    <Label Text="{Binding ItemNameError}" 
+                           IsVisible="{Binding ItemNameErrorVisible}" 
+                           StyleClass="errormessage" />
                     <Label Text="Choose your visitdate:"/>
                     <DatePicker  Date="{Binding VisitDate}" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal">

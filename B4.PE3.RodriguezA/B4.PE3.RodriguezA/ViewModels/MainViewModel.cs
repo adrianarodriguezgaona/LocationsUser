@@ -70,12 +70,9 @@ namespace B4.PE3.RodriguezA.ViewModels
 
         private async Task RefreshlocationsUserLists()
         {
-            IsBusy = true;
-            //get settings, because we need current user Id
-            //var settings = await settingsService.GetSettings();
-            //get all bucket lists for this user
+            IsBusy = true;            
             var locationsUser = await locationUserRepository.GetMyLocationLists();
-            //bind IEnumerable<Bucket> to the ListView's ItemSource
+            //bind IEnumerable<LocationUser> to the ListView's ItemSource
             LocationsUser = null;    //Important! ensure the list is empty first to force refresh!
             LocationsUser = new ObservableCollection<LocationUser>(locationsUser.OrderBy(e => e.Name));
             IsBusy = false;

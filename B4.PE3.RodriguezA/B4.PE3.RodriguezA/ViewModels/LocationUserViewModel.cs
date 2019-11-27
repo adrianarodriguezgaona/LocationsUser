@@ -1,6 +1,8 @@
 ﻿using B4.PE3.RodriguezA.Constants;
 using B4.PE3.RodriguezA.Domain.Models;
 using B4.PE3.RodriguezA.Domain.Services;
+using B4.PE3.RodriguezA.Validators;
+using FluentValidation;
 using FreshMvvm;
 using System;
 using System.Collections.Generic;
@@ -17,7 +19,7 @@ namespace B4.PE3.RodriguezA.ViewModels
 
     {
         private readonly  ILocationUserRepository locationUserRepository;
-
+        private IValidator _locationUserValidator;
         private LocationUser _currentLocationUser;
         private bool isNew = true;
 
@@ -27,6 +29,7 @@ namespace B4.PE3.RodriguezA.ViewModels
             Colors = new List<string>();
             LoadElements();
             this.locationUserRepository = locationUserRepository;
+            _locationUserValidator = new LocationUserValidator();
  
         }
         private string pageTitle;
@@ -58,8 +61,24 @@ namespace B4.PE3.RodriguezA.ViewModels
             set { name = value; RaisePropertyChanged(nameof(Name)); }
         }
 
+        private string locationUserNameError;
+        public string LocationUserNameError
+        {
+            get { return locationUserNameError; }
+            set
+            {
+                locationUserNameError = value;
+                RaisePropertyChanged(nameof(LocationUserNameError));
+                RaisePropertyChanged(nameof(LocationUserNameErrorVisible));
+            }
+        }
 
-   
+        public bool LocationUserNameErrorVisible
+        {
+            get { return !string.IsNullOrWhiteSpace(LocationUserNameError); }
+        }
+
+
         private string color;
         public string Color
         {
@@ -145,6 +164,8 @@ namespace B4.PE3.RodriguezA.ViewModels
             async () => {
                 SaveLocationUserState();
              
+                if(Validate(_currentLocationUser))
+                { 
                     IsBusy = true;
 
                     if (isNew)
@@ -160,7 +181,7 @@ namespace B4.PE3.RodriguezA.ViewModels
                 MessagingCenter.Send(this,MessageNames.LocationUserSaved, _currentLocationUser);
 
                 await CoreMethods.PopPageModel(false, true);
-
+                }
             }
         );
 
@@ -208,6 +229,20 @@ namespace B4.PE3.RodriguezA.ViewModels
             _currentLocationUser.Name = Name;
             _currentLocationUser.Color = Color;
            
+        }
+
+        private bool Validate(LocationUser location)
+        {
+            var validationResult = _locationUserValidator.Validate(location);
+            //loop through error to identify properties
+            foreach (var error in validationResult.Errors)
+            {
+                if (error.PropertyName == nameof(location.Name))
+                {
+                    LocationUserNameError = error.ErrorMessage;
+                }
+            }
+            return validationResult.IsValid;
         }
     }
 }
