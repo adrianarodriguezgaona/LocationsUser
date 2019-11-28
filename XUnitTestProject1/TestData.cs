@@ -18,14 +18,14 @@ namespace XUnitTestProject1
             new LocationUser
             {
                 Id = Guid.Parse("00000000-0000-0000-0000-000000000002"),
-                Name = "Cocktails",
+                Name = null,
                 Color ="green",
                 Items = new List<LocationItem>()
             },
             new LocationUser
             {
                 Id = Guid.Parse("00000000-0000-0000-0000-000000000003"),
-                Name = "Another Site",
+                Name = "A",
                 Color ="aqua",
                 Items = new List<LocationItem>()
             },            
@@ -44,7 +44,16 @@ namespace XUnitTestProject1
              new LocationItem
             {
                  Id = Guid.Parse("00000000-0000-0000-0000-000000000002"),
-                 ItemName ="Grill",
+                 ItemName ="mamamamamamamamamamamammamamammamamamamamammamamamamamamamamamamamamamamamammamamamamamamamamamaam",
+                 LocationUserId = Guid.Parse("00000000-0000-0000-0000-000000000001"),
+                 VisitDate = DateTime.Now
+
+           },
+
+              new LocationItem
+            {
+                 Id = Guid.Parse("00000000-0000-0000-0000-000000000003"), 
+                 ItemName = null,
                  LocationUserId = Guid.Parse("00000000-0000-0000-0000-000000000001"),
                  VisitDate = DateTime.Now
 

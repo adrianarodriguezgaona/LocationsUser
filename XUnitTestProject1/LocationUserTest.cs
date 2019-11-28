@@ -8,6 +8,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Xunit;
+using FluentValidation;
+using B4.PE3.RodriguezA.Validators;
 
 namespace XUnitTestProject1
 {
@@ -15,11 +17,13 @@ namespace XUnitTestProject1
     {
         LocationUser[] locationsUsertest;
         LocationItem[] locationItems;
+        IValidator validator;
 
         public LocationUserTest()
         {
             locationsUsertest = TestData.TestLocationsUser;
             locationItems = TestData.TestLocationItems;
+            validator = new LocationUserValidator();
         }
 
         [Fact]
@@ -44,26 +48,39 @@ namespace XUnitTestProject1
         }
 
 
-        //[Fact]
-        //public void LocationUserViewModel_GetALocationItem_OnReverseInit()
-        //{
-        //    //Arrange
-        //    var locationItem = locationItems[0];
-        //    locationItem.ParentLocation.Items.Add(locationItem);
-        //    var mockService = new Mock<ILocationUserRepository>();
-        //    //mockService.Setup(repo => repo.GetLocationUserList(locationItem.Id))
-        //    //    .Returns(Task.FromResult(locationItem));
+        [Fact]
+        public void LocationUserValidator_Throws_ValidationException_When_NameIsEmpty()
+        {
+            //Arrange
+            var invalidLocation = locationsUsertest[1];
 
-        //    //Act
-        //    var viewmodel = new LocationUserViewModel(mockService.Object);
+            //Act
+            var results = validator.Validate(invalidLocation);
+            var errors = results.Errors;
 
-        //    if (viewmodel.GetType().GetMethod("ReverseInit") != null)
-        //        viewmodel.ReverseInit(locationItem);
+            //assert
 
-        //    //Assert
-        //    //Assert.NotNull(viewmodel.LocationItems);
-        //    Assert.Equal(viewmodel.LocationItems[0].ItemName, locationItem.ItemName);
-        //}
+            Assert.NotEmpty(errors);
+
+        }
+
+        [Fact]
+        public void LocationUserValidator_Throws_ValidationException_When_NameOutOfRange()
+        {
+            //Arrange
+            var invalidLocation = locationsUsertest[2];
+
+            //Act
+            var results = validator.Validate(invalidLocation);
+            var errors = results.Errors;
+
+            //assert
+
+            Assert.NotEmpty(errors);
+
+        }
+
+
 
         //[Fact]
 
@@ -73,12 +90,13 @@ namespace XUnitTestProject1
 
         //    var newLocationUserTest = locationsUsertest[0];
         //    var mockService = new Mock<ILocationUserRepository>();
-        //    mockService.Setup(repo => repo.AddLocationUserList(newLocationUserTest))
-        //       .Returns(Task.FromResult(newLocationUserTest));
+           
         //    //Act
         //    var viewModel = new LocationUserViewModel(mockService.Object);
 
         //    viewModel.SaveLocationUserCommand.Execute(null);
+        //    mockService.Setup(repo => repo.AddLocationUserList(newLocationUserTest));
+        //      //.Returns(Task.FromResult(newLocationUserTest));
 
         //    Assert.NotNull(viewModel.Name);
         //    Assert.Equal(viewModel.Name, newLocationUserTest.Name);
