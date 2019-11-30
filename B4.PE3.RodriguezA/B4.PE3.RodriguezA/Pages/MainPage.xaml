@@ -6,7 +6,7 @@
              xmlns:views="clr-namespace:B4.PE3.RodriguezA.Pages"
              xmlns:bhv="clr-namespace:B4.PE3.RodriguezA.Behaviors"
              mc:Ignorable="d" 
-             Title="Locations Lists"
+             Title="FVPApp with your places"
              x:Name="page"
              x:Class="B4.PE3.RodriguezA.Pages.MainPage">
     <ContentPage.ToolbarItems>

@@ -12,5 +12,5 @@ C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\obj\Debug\netstanda
 C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\obj\Debug\netstandard2.0\B4.PE3.RodriguezA.AssemblyInfo.cs
 C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\obj\Debug\netstandard2.0\B4.PE3.RodriguezA.dll
 C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\obj\Debug\netstandard2.0\B4.PE3.RodriguezA.pdb
-C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\obj\Debug\netstandard2.0\XamlC.stamp
 C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\obj\Debug\netstandard2.0\Styles\appstyles.css.g.cs
+C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\obj\Debug\netstandard2.0\XamlC.stamp

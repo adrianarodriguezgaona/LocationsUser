@@ -91,3 +91,4 @@ C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\obj\x86\Debug\S
 C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\Xamarin.Forms.Maps.UWP.dll
 C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\Xamarin.Forms.Maps.dll
 C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\obj\x86\Debug\Xamarin.Forms.Maps.UWP.pri.xml
+C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\FluentValidation.dll
