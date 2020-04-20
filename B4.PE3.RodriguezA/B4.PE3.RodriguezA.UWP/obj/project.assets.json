@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "UAP,Version=v10.0.16299": {
-      "FluentValidation/8.5.1": {
+      "FluentValidation/8.6.1": {
         "type": "package",
         "dependencies": {
           "System.ComponentModel.Annotations": "4.4.1"
@@ -376,7 +376,7 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
-      "Syncfusion.Licensing/17.3.0.28": {
+      "Syncfusion.Licensing/17.4.0.40": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -385,10 +385,10 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Buttons/17.3.0.28": {
+      "Syncfusion.Xamarin.Buttons/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "17.3.0.28",
+          "Syncfusion.Xamarin.Core": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -400,10 +400,10 @@
           "lib/uap10.0/Syncfusion.Buttons.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/17.3.0.28": {
+      "Syncfusion.Xamarin.Core/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.3.0.28",
+          "Syncfusion.Licensing": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -474,6 +474,15 @@
           "lib/win8/_._": {}
         }
       },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -535,12 +544,13 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.3.0.991211": {
+      "Xamarin.Forms/4.4.0.991265": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.12",
           "Microsoft.UI.Xaml": "2.1.190606001",
           "NETStandard.Library": "2.0.1",
+          "System.ValueTuple": "4.5.0",
           "Win2D.uwp": "1.20.0"
         },
         "compile": {
@@ -560,10 +570,10 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.3.0.991211": {
+      "Xamarin.Forms.Maps/4.4.0.991265": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.3.0.991211"
+          "Xamarin.Forms": "4.4.0.991265"
         },
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
@@ -578,14 +588,14 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "FluentValidation": "8.5.1",
+          "FluentValidation": "8.6.1",
           "FreshMvvm": "3.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Syncfusion.Xamarin.Buttons": "17.3.0.28",
+          "Syncfusion.Xamarin.Buttons": "17.4.0.40",
           "Xam.Plugin.Geolocator": "4.5.0.6",
           "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.3.0.991211"
+          "Xamarin.Forms": "4.4.0.991265"
         },
         "compile": {
           "bin/placeholder/B4.PE3.RodriguezA.dll": {}
@@ -596,7 +606,7 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-arm": {
-      "FluentValidation/8.5.1": {
+      "FluentValidation/8.6.1": {
         "type": "package",
         "dependencies": {
           "System.ComponentModel.Annotations": "4.4.1"
@@ -1170,7 +1180,7 @@
           "runtimes/win/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Licensing/17.3.0.28": {
+      "Syncfusion.Licensing/17.4.0.40": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -1179,10 +1189,10 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Buttons/17.3.0.28": {
+      "Syncfusion.Xamarin.Buttons/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "17.3.0.28",
+          "Syncfusion.Xamarin.Core": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -1194,10 +1204,10 @@
           "lib/uap10.0/Syncfusion.Buttons.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/17.3.0.28": {
+      "Syncfusion.Xamarin.Core/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.3.0.28",
+          "Syncfusion.Licensing": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -1280,6 +1290,15 @@
           "lib/win8/_._": {}
         }
       },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -1330,12 +1349,13 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.3.0.991211": {
+      "Xamarin.Forms/4.4.0.991265": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.12",
           "Microsoft.UI.Xaml": "2.1.190606001",
           "NETStandard.Library": "2.0.1",
+          "System.ValueTuple": "4.5.0",
           "Win2D.uwp": "1.20.0"
         },
         "compile": {
@@ -1355,10 +1375,10 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.3.0.991211": {
+      "Xamarin.Forms.Maps/4.4.0.991265": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.3.0.991211"
+          "Xamarin.Forms": "4.4.0.991265"
         },
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
@@ -1373,14 +1393,14 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "FluentValidation": "8.5.1",
+          "FluentValidation": "8.6.1",
           "FreshMvvm": "3.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Syncfusion.Xamarin.Buttons": "17.3.0.28",
+          "Syncfusion.Xamarin.Buttons": "17.4.0.40",
           "Xam.Plugin.Geolocator": "4.5.0.6",
           "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.3.0.991211"
+          "Xamarin.Forms": "4.4.0.991265"
         },
         "compile": {
           "bin/placeholder/B4.PE3.RodriguezA.dll": {}
@@ -1391,7 +1411,7 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-arm-aot": {
-      "FluentValidation/8.5.1": {
+      "FluentValidation/8.6.1": {
         "type": "package",
         "dependencies": {
           "System.ComponentModel.Annotations": "4.4.1"
@@ -1966,7 +1986,7 @@
           "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Licensing/17.3.0.28": {
+      "Syncfusion.Licensing/17.4.0.40": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -1975,10 +1995,10 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Buttons/17.3.0.28": {
+      "Syncfusion.Xamarin.Buttons/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "17.3.0.28",
+          "Syncfusion.Xamarin.Core": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -1990,10 +2010,10 @@
           "lib/uap10.0/Syncfusion.Buttons.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/17.3.0.28": {
+      "Syncfusion.Xamarin.Core/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.3.0.28",
+          "Syncfusion.Licensing": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -2076,6 +2096,15 @@
           "lib/win8/_._": {}
         }
       },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -2126,12 +2155,13 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.3.0.991211": {
+      "Xamarin.Forms/4.4.0.991265": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.12",
           "Microsoft.UI.Xaml": "2.1.190606001",
           "NETStandard.Library": "2.0.1",
+          "System.ValueTuple": "4.5.0",
           "Win2D.uwp": "1.20.0"
         },
         "compile": {
@@ -2151,10 +2181,10 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.3.0.991211": {
+      "Xamarin.Forms.Maps/4.4.0.991265": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.3.0.991211"
+          "Xamarin.Forms": "4.4.0.991265"
         },
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
@@ -2169,14 +2199,14 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "FluentValidation": "8.5.1",
+          "FluentValidation": "8.6.1",
           "FreshMvvm": "3.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Syncfusion.Xamarin.Buttons": "17.3.0.28",
+          "Syncfusion.Xamarin.Buttons": "17.4.0.40",
           "Xam.Plugin.Geolocator": "4.5.0.6",
           "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.3.0.991211"
+          "Xamarin.Forms": "4.4.0.991265"
         },
         "compile": {
           "bin/placeholder/B4.PE3.RodriguezA.dll": {}
@@ -2187,7 +2217,7 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-arm64-aot": {
-      "FluentValidation/8.5.1": {
+      "FluentValidation/8.6.1": {
         "type": "package",
         "dependencies": {
           "System.ComponentModel.Annotations": "4.4.1"
@@ -2762,7 +2792,7 @@
           "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Licensing/17.3.0.28": {
+      "Syncfusion.Licensing/17.4.0.40": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -2771,10 +2801,10 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Buttons/17.3.0.28": {
+      "Syncfusion.Xamarin.Buttons/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "17.3.0.28",
+          "Syncfusion.Xamarin.Core": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -2786,10 +2816,10 @@
           "lib/uap10.0/Syncfusion.Buttons.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/17.3.0.28": {
+      "Syncfusion.Xamarin.Core/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.3.0.28",
+          "Syncfusion.Licensing": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -2872,6 +2902,15 @@
           "lib/win8/_._": {}
         }
       },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -2919,12 +2958,13 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.3.0.991211": {
+      "Xamarin.Forms/4.4.0.991265": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.12",
           "Microsoft.UI.Xaml": "2.1.190606001",
           "NETStandard.Library": "2.0.1",
+          "System.ValueTuple": "4.5.0",
           "Win2D.uwp": "1.20.0"
         },
         "compile": {
@@ -2944,10 +2984,10 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.3.0.991211": {
+      "Xamarin.Forms.Maps/4.4.0.991265": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.3.0.991211"
+          "Xamarin.Forms": "4.4.0.991265"
         },
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
@@ -2962,14 +3002,14 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "FluentValidation": "8.5.1",
+          "FluentValidation": "8.6.1",
           "FreshMvvm": "3.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Syncfusion.Xamarin.Buttons": "17.3.0.28",
+          "Syncfusion.Xamarin.Buttons": "17.4.0.40",
           "Xam.Plugin.Geolocator": "4.5.0.6",
           "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.3.0.991211"
+          "Xamarin.Forms": "4.4.0.991265"
         },
         "compile": {
           "bin/placeholder/B4.PE3.RodriguezA.dll": {}
@@ -2980,7 +3020,7 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x64": {
-      "FluentValidation/8.5.1": {
+      "FluentValidation/8.6.1": {
         "type": "package",
         "dependencies": {
           "System.ComponentModel.Annotations": "4.4.1"
@@ -3554,7 +3594,7 @@
           "runtimes/win/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Licensing/17.3.0.28": {
+      "Syncfusion.Licensing/17.4.0.40": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -3563,10 +3603,10 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Buttons/17.3.0.28": {
+      "Syncfusion.Xamarin.Buttons/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "17.3.0.28",
+          "Syncfusion.Xamarin.Core": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -3578,10 +3618,10 @@
           "lib/uap10.0/Syncfusion.Buttons.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/17.3.0.28": {
+      "Syncfusion.Xamarin.Core/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.3.0.28",
+          "Syncfusion.Licensing": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -3664,6 +3704,15 @@
           "lib/win8/_._": {}
         }
       },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -3714,12 +3763,13 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.3.0.991211": {
+      "Xamarin.Forms/4.4.0.991265": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.12",
           "Microsoft.UI.Xaml": "2.1.190606001",
           "NETStandard.Library": "2.0.1",
+          "System.ValueTuple": "4.5.0",
           "Win2D.uwp": "1.20.0"
         },
         "compile": {
@@ -3739,10 +3789,10 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.3.0.991211": {
+      "Xamarin.Forms.Maps/4.4.0.991265": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.3.0.991211"
+          "Xamarin.Forms": "4.4.0.991265"
         },
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
@@ -3757,14 +3807,14 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "FluentValidation": "8.5.1",
+          "FluentValidation": "8.6.1",
           "FreshMvvm": "3.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Syncfusion.Xamarin.Buttons": "17.3.0.28",
+          "Syncfusion.Xamarin.Buttons": "17.4.0.40",
           "Xam.Plugin.Geolocator": "4.5.0.6",
           "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.3.0.991211"
+          "Xamarin.Forms": "4.4.0.991265"
         },
         "compile": {
           "bin/placeholder/B4.PE3.RodriguezA.dll": {}
@@ -3775,7 +3825,7 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x64-aot": {
-      "FluentValidation/8.5.1": {
+      "FluentValidation/8.6.1": {
         "type": "package",
         "dependencies": {
           "System.ComponentModel.Annotations": "4.4.1"
@@ -4350,7 +4400,7 @@
           "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Licensing/17.3.0.28": {
+      "Syncfusion.Licensing/17.4.0.40": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -4359,10 +4409,10 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Buttons/17.3.0.28": {
+      "Syncfusion.Xamarin.Buttons/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "17.3.0.28",
+          "Syncfusion.Xamarin.Core": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -4374,10 +4424,10 @@
           "lib/uap10.0/Syncfusion.Buttons.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/17.3.0.28": {
+      "Syncfusion.Xamarin.Core/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.3.0.28",
+          "Syncfusion.Licensing": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -4460,6 +4510,15 @@
           "lib/win8/_._": {}
         }
       },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -4510,12 +4569,13 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.3.0.991211": {
+      "Xamarin.Forms/4.4.0.991265": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.12",
           "Microsoft.UI.Xaml": "2.1.190606001",
           "NETStandard.Library": "2.0.1",
+          "System.ValueTuple": "4.5.0",
           "Win2D.uwp": "1.20.0"
         },
         "compile": {
@@ -4535,10 +4595,10 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.3.0.991211": {
+      "Xamarin.Forms.Maps/4.4.0.991265": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.3.0.991211"
+          "Xamarin.Forms": "4.4.0.991265"
         },
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
@@ -4553,14 +4613,14 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "FluentValidation": "8.5.1",
+          "FluentValidation": "8.6.1",
           "FreshMvvm": "3.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Syncfusion.Xamarin.Buttons": "17.3.0.28",
+          "Syncfusion.Xamarin.Buttons": "17.4.0.40",
           "Xam.Plugin.Geolocator": "4.5.0.6",
           "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.3.0.991211"
+          "Xamarin.Forms": "4.4.0.991265"
         },
         "compile": {
           "bin/placeholder/B4.PE3.RodriguezA.dll": {}
@@ -4571,7 +4631,7 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x86": {
-      "FluentValidation/8.5.1": {
+      "FluentValidation/8.6.1": {
         "type": "package",
         "dependencies": {
           "System.ComponentModel.Annotations": "4.4.1"
@@ -5145,7 +5205,7 @@
           "runtimes/win/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Licensing/17.3.0.28": {
+      "Syncfusion.Licensing/17.4.0.40": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -5154,10 +5214,10 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Buttons/17.3.0.28": {
+      "Syncfusion.Xamarin.Buttons/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "17.3.0.28",
+          "Syncfusion.Xamarin.Core": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -5169,10 +5229,10 @@
           "lib/uap10.0/Syncfusion.Buttons.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/17.3.0.28": {
+      "Syncfusion.Xamarin.Core/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.3.0.28",
+          "Syncfusion.Licensing": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -5255,6 +5315,15 @@
           "lib/win8/_._": {}
         }
       },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -5305,12 +5374,13 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.3.0.991211": {
+      "Xamarin.Forms/4.4.0.991265": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.12",
           "Microsoft.UI.Xaml": "2.1.190606001",
           "NETStandard.Library": "2.0.1",
+          "System.ValueTuple": "4.5.0",
           "Win2D.uwp": "1.20.0"
         },
         "compile": {
@@ -5330,10 +5400,10 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.3.0.991211": {
+      "Xamarin.Forms.Maps/4.4.0.991265": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.3.0.991211"
+          "Xamarin.Forms": "4.4.0.991265"
         },
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
@@ -5348,14 +5418,14 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "FluentValidation": "8.5.1",
+          "FluentValidation": "8.6.1",
           "FreshMvvm": "3.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Syncfusion.Xamarin.Buttons": "17.3.0.28",
+          "Syncfusion.Xamarin.Buttons": "17.4.0.40",
           "Xam.Plugin.Geolocator": "4.5.0.6",
           "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.3.0.991211"
+          "Xamarin.Forms": "4.4.0.991265"
         },
         "compile": {
           "bin/placeholder/B4.PE3.RodriguezA.dll": {}
@@ -5366,7 +5436,7 @@
       }
     },
     "UAP,Version=v10.0.16299/win10-x86-aot": {
-      "FluentValidation/8.5.1": {
+      "FluentValidation/8.6.1": {
         "type": "package",
         "dependencies": {
           "System.ComponentModel.Annotations": "4.4.1"
@@ -5941,7 +6011,7 @@
           "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
-      "Syncfusion.Licensing/17.3.0.28": {
+      "Syncfusion.Licensing/17.4.0.40": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -5950,10 +6020,10 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Buttons/17.3.0.28": {
+      "Syncfusion.Xamarin.Buttons/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "17.3.0.28",
+          "Syncfusion.Xamarin.Core": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -5965,10 +6035,10 @@
           "lib/uap10.0/Syncfusion.Buttons.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/17.3.0.28": {
+      "Syncfusion.Xamarin.Core/17.4.0.40": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "17.3.0.28",
+          "Syncfusion.Licensing": "17.4.0.40",
           "Xamarin.Forms": "3.6.0.344457"
         },
         "compile": {
@@ -6051,6 +6121,15 @@
           "lib/win8/_._": {}
         }
       },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
       "Win2D.uwp/1.20.0": {
         "type": "package",
         "compile": {
@@ -6101,12 +6180,13 @@
           "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.3.0.991211": {
+      "Xamarin.Forms/4.4.0.991265": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.12",
           "Microsoft.UI.Xaml": "2.1.190606001",
           "NETStandard.Library": "2.0.1",
+          "System.ValueTuple": "4.5.0",
           "Win2D.uwp": "1.20.0"
         },
         "compile": {
@@ -6126,10 +6206,10 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.3.0.991211": {
+      "Xamarin.Forms.Maps/4.4.0.991265": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.3.0.991211"
+          "Xamarin.Forms": "4.4.0.991265"
         },
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll": {},
@@ -6144,14 +6224,14 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "FluentValidation": "8.5.1",
+          "FluentValidation": "8.6.1",
           "FreshMvvm": "3.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Syncfusion.Xamarin.Buttons": "17.3.0.28",
+          "Syncfusion.Xamarin.Buttons": "17.4.0.40",
           "Xam.Plugin.Geolocator": "4.5.0.6",
           "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.3.0.991211"
+          "Xamarin.Forms": "4.4.0.991265"
         },
         "compile": {
           "bin/placeholder/B4.PE3.RodriguezA.dll": {}
@@ -6163,14 +6243,14 @@
     }
   },
   "libraries": {
-    "FluentValidation/8.5.1": {
-      "sha512": "GoygZcMkCcve3UHZM3ITSzgrPdfjPSl5mRSQKL6BlV8aI0yi+shIAju7k6QirPESNGsKzn+r4ne0JmqsAGG/PA==",
+    "FluentValidation/8.6.1": {
+      "sha512": "g0xw/YCVgJ1IYpBgKF9iuci/Arf6Dsq9H/WeeT9zaBpjrEA+Cr2GjWXHu1F0DKqVzp4J4hta4gGrRt6H4aESqQ==",
       "type": "package",
-      "path": "fluentvalidation/8.5.1",
+      "path": "fluentvalidation/8.6.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "fluentvalidation.8.5.1.nupkg.sha512",
+        "fluentvalidation.8.6.1.nupkg.sha512",
         "fluentvalidation.nuspec",
         "lib/net45/FluentValidation.dll",
         "lib/net45/FluentValidation.xml",
@@ -6623,11 +6703,12 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "sha512": "548M6mnBSJWxsIlkQHfbzoYxpiYFXZZSL00p4GHYv8PkiqFBnnT68mW5mGEsA/ch9fDO9GkPgkFQpWiXZN7mAQ==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -10781,10 +10862,10 @@
         "runtimes/win/lib/netstandard1.0/System.Private.Uri.dll"
       ]
     },
-    "Syncfusion.Licensing/17.3.0.28": {
-      "sha512": "QEzu4RChxb/jBtA+XJCO3Kzgg9v7e6/RCqfFNtoQz2F1aWbzn8CXz8mdSiHa/SWptA/wQ7js16P9+e2ZUBXVrg==",
+    "Syncfusion.Licensing/17.4.0.40": {
+      "sha512": "qfnmCR1ccJqSsZDmVDbAZMcaJLlSk/pytgWMa8cMEkZ4RcMgntPvCHdHVh0vO1ZP59DkdksCy/j5RJ3tKZ8iig==",
       "type": "package",
-      "path": "syncfusion.licensing/17.3.0.28",
+      "path": "syncfusion.licensing/17.4.0.40",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -10804,14 +10885,14 @@
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.17.3.0.28.nupkg.sha512",
+        "syncfusion.licensing.17.4.0.40.nupkg.sha512",
         "syncfusion.licensing.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.Buttons/17.3.0.28": {
-      "sha512": "wUl5/doPASaW7dyA8viMyfkiXRPDto3rwoiGgY08JqJFMlD+Y/jq2+Y49BgWfztGXQMTxcg8zJsHsYzFhfxFGA==",
+    "Syncfusion.Xamarin.Buttons/17.4.0.40": {
+      "sha512": "eFxJ7gzvFHRVlNWqsruAV1X6DePivAuwUPyhyvmbtAE4IOJNRIU/i96RAGe5ECx7XHsgsIkxBqEB6d/bPROtLA==",
       "type": "package",
-      "path": "syncfusion.xamarin.buttons/17.3.0.28",
+      "path": "syncfusion.xamarin.buttons/17.4.0.40",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -10835,14 +10916,14 @@
         "lib/uap10.0/Syncfusion.Buttons.XForms.UWP/Themes/Generic.xaml",
         "lib/uap10.0/Syncfusion.Buttons.XForms.dll",
         "lib/uap10.0/Syncfusion.Buttons.XForms.xml",
-        "syncfusion.xamarin.buttons.17.3.0.28.nupkg.sha512",
+        "syncfusion.xamarin.buttons.17.4.0.40.nupkg.sha512",
         "syncfusion.xamarin.buttons.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.Core/17.3.0.28": {
-      "sha512": "bo/f9ooD6ka2t1ZNAz/2g4q/wGQDm0301j2k1lQGcPwGRD2hxzeC3aJK9PpYaSrb9ZzE79y9PouO8kV8pNklWA==",
+    "Syncfusion.Xamarin.Core/17.4.0.40": {
+      "sha512": "vc3S041SFS5RzQ3CzV1rwDRNiuGsRT3jWGnC4HBt+D3CPVqD6aY8OHxMh3nFA8T70t9Y6qsWeUHNF5mNIsmXOA==",
       "type": "package",
-      "path": "syncfusion.xamarin.core/17.3.0.28",
+      "path": "syncfusion.xamarin.core/17.4.0.40",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -10866,7 +10947,7 @@
         "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xaml",
         "lib/uap10.0/Syncfusion.Core.XForms.dll",
         "lib/uap10.0/Syncfusion.Core.XForms.xml",
-        "syncfusion.xamarin.core.17.3.0.28.nupkg.sha512",
+        "syncfusion.xamarin.core.17.4.0.40.nupkg.sha512",
         "syncfusion.xamarin.core.nuspec"
       ]
     },
@@ -11190,6 +11271,50 @@
         "system.runtime.nuspec"
       ]
     },
+    "System.ValueTuple/4.5.0": {
+      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "type": "package",
+      "path": "system.valuetuple/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.5.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "Win2D.uwp/1.20.0": {
       "sha512": "sFyNT2EiV6vmEFMrkiJdSolaKNyOyk+kfjgvXN8XqUhdEPqBd2zPrFdl7SojNHQGm2Br6JLIBOdrj9fB1Qy4GA==",
       "type": "package",
@@ -11314,10 +11439,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.3.0.991211": {
-      "sha512": "cWbxRKy6oPbFvpw2K6Du3bSo34LDyVKYSR6jCDSbB3Ieyj6549bWQbBLUEptRGQQ8fhDTcJQ/ezqwGwxd+7bkg==",
+    "Xamarin.Forms/4.4.0.991265": {
+      "sha512": "FhG5Sq2wzY8A6IzW3iMVVKqQf4G3hry0joDDGnw1SWBQ5cfW6YNpOiuh2wB/BRPoVnO0SuUBY+b1NPXve72NDQ==",
       "type": "package",
-      "path": "xamarin.forms/4.3.0.991211",
+      "path": "xamarin.forms/4.4.0.991265",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -11546,6 +11671,7 @@
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/DensityStyles/Compact.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/Themes/generic.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/PickerStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
@@ -11559,14 +11685,14 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.3.0.991211.nupkg.sha512",
+        "xamarin.forms.4.4.0.991265.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
-    "Xamarin.Forms.Maps/4.3.0.991211": {
-      "sha512": "0S7xnE4FA+23BbRKf570eeaJ0pttoPa2SWVt9W9jt+OPU0GM5w1j9hmuY16vAWodElnaLiaLqarr+SjPQoCrKg==",
+    "Xamarin.Forms.Maps/4.4.0.991265": {
+      "sha512": "yOl1O+P/Im5zjiF76NJVLIzD7STyVtS43cEJ/DYUWc4rWkOClT9WF3oAMshVR5WxoJzcxoCK3fCanUAPmeZptw==",
       "type": "package",
-      "path": "xamarin.forms.maps/4.3.0.991211",
+      "path": "xamarin.forms.maps/4.4.0.991265",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -11592,7 +11718,7 @@
         "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll",
         "lib/uap10.0/Xamarin.Forms.Maps.UWP.pri",
         "lib/uap10.0/Xamarin.Forms.Maps.dll",
-        "xamarin.forms.maps.4.3.0.991211.nupkg.sha512",
+        "xamarin.forms.maps.4.4.0.991265.nupkg.sha512",
         "xamarin.forms.maps.nuspec"
       ]
     },
@@ -11605,14 +11731,14 @@
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.16299": [
       "B4.PE3.RodriguezA >= 1.0.0",
-      "FluentValidation >= 8.5.1",
+      "FluentValidation >= 8.6.1",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.9",
       "Newtonsoft.Json >= 12.0.3",
       "Xam.Plugin.Geolocator >= 4.5.0.6",
       "Xam.Plugin.Media >= 4.0.1.5",
       "Xamarin.Essentials >= 1.3.1",
-      "Xamarin.Forms >= 4.3.0.991211",
-      "Xamarin.Forms.Maps >= 4.3.0.991211"
+      "Xamarin.Forms >= 4.4.0.991265",
+      "Xamarin.Forms.Maps >= 4.4.0.991265"
     ]
   },
   "packageFolders": {
@@ -11623,11 +11749,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.UWP\\B4.PE3.RodriguezA.UWP.csproj",
+      "projectUniqueName": "D:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.UWP\\B4.PE3.RodriguezA.UWP.csproj",
       "projectName": "B4.PE3.RodriguezA.UWP",
-      "projectPath": "C:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.UWP\\B4.PE3.RodriguezA.UWP.csproj",
+      "projectPath": "D:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.UWP\\B4.PE3.RodriguezA.UWP.csproj",
       "packagesPath": "C:\\Users\\adria\\.nuget\\packages\\",
-      "outputPath": "C:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.UWP\\obj\\",
+      "outputPath": "D:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -11649,8 +11775,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.csproj": {
-              "projectPath": "C:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.csproj"
+            "D:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.csproj": {
+              "projectPath": "D:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.csproj"
             }
           }
         }
@@ -11661,7 +11787,7 @@
         "dependencies": {
           "FluentValidation": {
             "target": "Package",
-            "version": "[8.5.1, )"
+            "version": "[8.6.1, )"
           },
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
@@ -11685,11 +11811,11 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.3.0.991211, )"
+            "version": "[4.4.0.991265, )"
           },
           "Xamarin.Forms.Maps": {
             "target": "Package",
-            "version": "[4.3.0.991211, )"
+            "version": "[4.4.0.991265, )"
           }
         },
         "imports": [

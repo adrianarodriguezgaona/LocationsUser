@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.Android\\B4.PE3.RodriguezA.Android.csproj": {}
+    "D:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.Android\\B4.PE3.RodriguezA.Android.csproj": {}
   },
   "projects": {
-    "C:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.Android\\B4.PE3.RodriguezA.Android.csproj": {
+    "D:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.Android\\B4.PE3.RodriguezA.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.Android\\B4.PE3.RodriguezA.Android.csproj",
+        "projectUniqueName": "D:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.Android\\B4.PE3.RodriguezA.Android.csproj",
         "projectName": "B4.PE3.RodriguezA.Android",
-        "projectPath": "C:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.Android\\B4.PE3.RodriguezA.Android.csproj",
+        "projectPath": "D:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.Android\\B4.PE3.RodriguezA.Android.csproj",
         "packagesPath": "C:\\Users\\adria\\.nuget\\packages\\",
-        "outputPath": "C:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.Android\\obj\\",
+        "outputPath": "D:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.csproj": {
-                "projectPath": "C:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.csproj"
+              "D:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.csproj": {
+                "projectPath": "D:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.csproj"
               }
             }
           }
@@ -44,7 +44,7 @@
           "dependencies": {
             "FluentValidation": {
               "target": "Package",
-              "version": "[8.5.1, )"
+              "version": "[8.6.1, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -92,24 +92,24 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.3.0.991211, )"
+              "version": "[4.4.0.991265, )"
             },
             "Xamarin.Forms.Maps": {
               "target": "Package",
-              "version": "[4.3.0.991211, )"
+              "version": "[4.4.0.991265, )"
             }
           }
         }
       }
     },
-    "C:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.csproj": {
+    "D:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.csproj",
+        "projectUniqueName": "D:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.csproj",
         "projectName": "B4.PE3.RodriguezA",
-        "projectPath": "C:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.csproj",
+        "projectPath": "D:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA.csproj",
         "packagesPath": "C:\\Users\\adria\\.nuget\\packages\\",
-        "outputPath": "C:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\obj\\",
+        "outputPath": "D:\\xam\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\B4.PE3.RodriguezA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -143,7 +143,7 @@
           "dependencies": {
             "FluentValidation": {
               "target": "Package",
-              "version": "[8.5.1, )"
+              "version": "[8.6.1, )"
             },
             "FreshMvvm": {
               "target": "Package",
@@ -161,7 +161,7 @@
             },
             "Syncfusion.Xamarin.Buttons": {
               "target": "Package",
-              "version": "[17.3.0.28, )"
+              "version": "[17.4.0.40, )"
             },
             "Xam.Plugin.Geolocator": {
               "target": "Package",
@@ -177,14 +177,20 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.3.0.991211, )"
+              "version": "[4.4.0.991265, )"
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

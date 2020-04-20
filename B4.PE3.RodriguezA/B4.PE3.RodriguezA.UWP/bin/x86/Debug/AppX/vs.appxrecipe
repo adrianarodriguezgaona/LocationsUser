@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ec0cc741-fd3e-485c-81be-68815c480690</PackageIdentityName>
     <PackageIdentityPublisher>CN=c3e94ffc-2eb5-4f89-8a3f-14f0a8c5d5b4</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>27A86A0C678B0784029CFF66A50845B0D41B75F0E1928731E177F80C4851BB6E</RegisteredManifestChecksum>
+    <LayoutDir>D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>1C8E259C8D14E4522C3AFC9CDC3370CC72DC4186D701A3E0CDFE6400FA2C4C9A</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>6d8abaaf-6eed-44d4-b987-a0b8377d0393_1.0.0.0_x86__drwbf9cak23qa</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>6d8abaaf-6eed-44d4-b987-a0b8377d0393_drwbf9cak23qa!App</RegisteredUserModeAppID>
     <RegisteredPackageID>6d8abaaf-6eed-44d4-b987-a0b8377d0393</RegisteredPackageID>
@@ -27,20 +27,20 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-12-01T16:46:27.325</Modified>
+      <Modified>2020-04-20T10:02:55.971</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\B4.PE3.RodriguezA.UWP.exe">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\B4.PE3.RodriguezA.UWP.exe">
       <PackagePath>entrypoint\B4.PE3.RodriguezA.UWP.exe</PackagePath>
-      <Modified>2019-12-01T16:46:25.950</Modified>
+      <Modified>2020-04-20T10:02:50.363</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\fluentvalidation\8.5.1\lib\netstandard2.0\FluentValidation.dll">
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\fluentvalidation\8.6.1\lib\netstandard2.0\FluentValidation.dll">
       <PackagePath>FluentValidation.dll</PackagePath>
-      <Modified>2019-11-02T10:32:58.000</Modified>
+      <Modified>2019-12-28T18:28:52.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\freshmvvm\3.0.0\lib\netstandard2.0\FreshIOC.dll">
       <PackagePath>FreshIOC.dll</PackagePath>
@@ -62,25 +62,25 @@
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2019-07-22T12:01:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.licensing\17.3.0.28\lib\uap10.0\Syncfusion.Licensing.dll">
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.licensing\17.4.0.40\lib\uap10.0\Syncfusion.Licensing.dll">
       <PackagePath>Syncfusion.Licensing.dll</PackagePath>
-      <Modified>2019-11-18T07:31:08.000</Modified>
+      <Modified>2019-12-23T08:10:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.buttons\17.3.0.28\lib\uap10.0\Syncfusion.Buttons.XForms.UWP.dll">
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.buttons\17.4.0.40\lib\uap10.0\Syncfusion.Buttons.XForms.UWP.dll">
       <PackagePath>Syncfusion.Buttons.XForms.UWP.dll</PackagePath>
-      <Modified>2019-11-18T08:40:34.000</Modified>
+      <Modified>2019-12-23T09:21:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.buttons\17.3.0.28\lib\uap10.0\Syncfusion.Buttons.XForms.dll">
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.buttons\17.4.0.40\lib\uap10.0\Syncfusion.Buttons.XForms.dll">
       <PackagePath>Syncfusion.Buttons.XForms.dll</PackagePath>
-      <Modified>2019-11-18T08:39:56.000</Modified>
+      <Modified>2019-12-23T09:20:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.core\17.3.0.28\lib\uap10.0\Syncfusion.Core.XForms.UWP.dll">
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.core\17.4.0.40\lib\uap10.0\Syncfusion.Core.XForms.UWP.dll">
       <PackagePath>Syncfusion.Core.XForms.UWP.dll</PackagePath>
-      <Modified>2019-11-18T08:18:10.000</Modified>
+      <Modified>2019-12-23T08:59:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.core\17.3.0.28\lib\uap10.0\Syncfusion.Core.XForms.dll">
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.core\17.4.0.40\lib\uap10.0\Syncfusion.Core.XForms.dll">
       <PackagePath>Syncfusion.Core.XForms.dll</PackagePath>
-      <Modified>2019-11-18T08:17:28.000</Modified>
+      <Modified>2019-12-23T08:58:48.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\system.reactive\4.0.0\lib\uap10.0.16299\System.Reactive.dll">
       <PackagePath>System.Reactive.dll</PackagePath>
@@ -102,33 +102,33 @@
       <PackagePath>Xamarin.Essentials.dll</PackagePath>
       <Modified>2019-09-18T22:33:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\xamarin.forms\4.3.0.991211\lib\uap10.0\Xamarin.Forms.Core.dll">
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\xamarin.forms\4.4.0.991265\lib\uap10.0\Xamarin.Forms.Core.dll">
       <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
-      <Modified>2019-11-12T03:16:00.000</Modified>
+      <Modified>2019-12-09T23:29:38.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\xamarin.forms\4.3.0.991211\lib\uap10.0\Xamarin.Forms.Platform.UAP.dll">
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\xamarin.forms\4.4.0.991265\lib\uap10.0\Xamarin.Forms.Platform.UAP.dll">
       <PackagePath>Xamarin.Forms.Platform.UAP.dll</PackagePath>
-      <Modified>2019-11-12T03:16:02.000</Modified>
+      <Modified>2019-12-09T23:29:38.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\xamarin.forms\4.3.0.991211\lib\uap10.0\Xamarin.Forms.Platform.dll">
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\xamarin.forms\4.4.0.991265\lib\uap10.0\Xamarin.Forms.Platform.dll">
       <PackagePath>Xamarin.Forms.Platform.dll</PackagePath>
-      <Modified>2019-11-12T03:16:02.000</Modified>
+      <Modified>2019-12-09T23:29:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\xamarin.forms\4.3.0.991211\lib\uap10.0\Xamarin.Forms.Xaml.dll">
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\xamarin.forms\4.4.0.991265\lib\uap10.0\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
-      <Modified>2019-11-12T03:16:02.000</Modified>
+      <Modified>2019-12-09T23:29:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\xamarin.forms.maps\4.3.0.991211\lib\uap10.0\Xamarin.Forms.Maps.UWP.dll">
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\xamarin.forms.maps\4.4.0.991265\lib\uap10.0\Xamarin.Forms.Maps.UWP.dll">
       <PackagePath>Xamarin.Forms.Maps.UWP.dll</PackagePath>
-      <Modified>2019-11-12T03:16:20.000</Modified>
+      <Modified>2019-12-09T23:30:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\xamarin.forms.maps\4.3.0.991211\lib\uap10.0\Xamarin.Forms.Maps.dll">
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\xamarin.forms.maps\4.4.0.991265\lib\uap10.0\Xamarin.Forms.Maps.dll">
       <PackagePath>Xamarin.Forms.Maps.dll</PackagePath>
-      <Modified>2019-11-12T03:16:20.000</Modified>
+      <Modified>2019-12-09T23:30:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\bin\Debug\netstandard2.0\B4.PE3.RodriguezA.dll">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA\bin\Debug\netstandard2.0\B4.PE3.RodriguezA.dll">
       <PackagePath>B4.PE3.RodriguezA.dll</PackagePath>
-      <Modified>2019-12-01T16:44:44.763</Modified>
+      <Modified>2019-12-29T14:13:50.115</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -138,184 +138,204 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2018-10-22T23:33:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\add.png">
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.buttons\17.4.0.40\lib\uap10.0\Syncfusion.Buttons.XForms.UWP\Syncfusion.Buttons.XForms.UWP.xr.xml">
+      <PackagePath>Syncfusion.Buttons.XForms.UWP\Syncfusion.Buttons.XForms.UWP.xr.xml</PackagePath>
+      <Modified>2019-12-23T09:21:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.core\17.4.0.40\lib\uap10.0\Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml">
+      <PackagePath>Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml</PackagePath>
+      <Modified>2019-12-23T08:59:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\xamarin.forms\4.4.0.991265\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
+      <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
+      <Modified>2019-12-09T23:29:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.buttons\17.4.0.40\lib\uap10.0\Syncfusion.Buttons.XForms.UWP\Assets\SfButton.ttf">
+      <PackagePath>Syncfusion.Buttons.XForms.UWP\Assets\SfButton.ttf</PackagePath>
+      <Modified>2019-12-23T07:42:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.buttons\17.4.0.40\lib\uap10.0\Syncfusion.Buttons.XForms.UWP\Assets\sfbutton_Segoe MDL2 Assets.ttf">
+      <PackagePath>Syncfusion.Buttons.XForms.UWP\Assets\sfbutton_Segoe MDL2 Assets.ttf</PackagePath>
+      <Modified>2019-12-23T07:42:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\add.png">
       <PackagePath>add.png</PackagePath>
       <Modified>2019-12-01T16:46:01.788</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-11T11:16:56.976</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-11T11:16:56.979</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-11T11:16:56.982</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\camara.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\camara.png">
       <PackagePath>camara.png</PackagePath>
       <Modified>2019-11-22T21:59:02.027</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\google_maps.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\google_maps.png">
       <PackagePath>google_maps.png</PackagePath>
       <Modified>2019-11-22T21:59:07.444</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\icon50.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\icon50.png">
       <PackagePath>icon50.png</PackagePath>
       <Modified>2019-11-23T10:22:36.440</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\location.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\location.png">
       <PackagePath>location.png</PackagePath>
       <Modified>2019-11-22T21:59:19.019</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\ok.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\ok.png">
       <PackagePath>ok.png</PackagePath>
       <Modified>2019-11-17T21:00:51.252</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-23T09:33:03.535</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-23T09:32:25.706</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-23T09:31:39.586</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-11T11:16:57.049</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-23T10:18:21.672</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-23T10:19:02.875</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-23T09:38:23.713</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-23T09:37:40.886</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-23T09:37:01.006</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-11T11:16:57.123</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-11T11:16:57.125</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-11T11:16:57.126</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-11T11:16:57.132</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-11T11:16:57.134</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-11T11:16:57.136</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-11T11:16:57.200</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-11T11:16:57.202</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-11T11:16:57.204</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-23T09:42:23.466</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-23T09:41:48.619</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-23T09:41:14.027</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-11T11:16:57.290</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-11T11:16:57.294</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-11-11T11:16:57.296</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2019-11-11T11:16:57.299</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\B4.PE3.RodriguezA.UWP.xr.xml">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\B4.PE3.RodriguezA.UWP.xr.xml">
       <PackagePath>B4.PE3.RodriguezA.UWP.xr.xml</PackagePath>
       <Modified>2019-11-16T14:54:48.081</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\Microsoft.UI.Xaml\DensityStyles\Compact.xbf">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\Microsoft.UI.Xaml\DensityStyles\Compact.xbf">
       <PackagePath>Microsoft.UI.Xaml\DensityStyles\Compact.xbf</PackagePath>
-      <Modified>2019-12-01T16:46:25.732</Modified>
+      <Modified>2020-04-20T10:02:49.964</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-12-01T16:46:25.732</Modified>
+      <Modified>2020-04-20T10:02:49.964</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-12-01T16:46:25.732</Modified>
+      <Modified>2020-04-20T10:02:49.964</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.17763.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -329,33 +349,13 @@
       <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
       <Modified>2019-06-07T09:59:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.buttons\17.3.0.28\lib\uap10.0\Syncfusion.Buttons.XForms.UWP\Syncfusion.Buttons.XForms.UWP.xr.xml">
-      <PackagePath>Syncfusion.Buttons.XForms.UWP\Syncfusion.Buttons.XForms.UWP.xr.xml</PackagePath>
-      <Modified>2019-11-18T08:40:34.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.buttons\17.3.0.28\lib\uap10.0\Syncfusion.Buttons.XForms.UWP\Assets\SfButton.ttf">
-      <PackagePath>Syncfusion.Buttons.XForms.UWP\Assets\SfButton.ttf</PackagePath>
-      <Modified>2019-11-18T06:46:22.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.buttons\17.3.0.28\lib\uap10.0\Syncfusion.Buttons.XForms.UWP\Assets\sfbutton_Segoe MDL2 Assets.ttf">
-      <PackagePath>Syncfusion.Buttons.XForms.UWP\Assets\sfbutton_Segoe MDL2 Assets.ttf</PackagePath>
-      <Modified>2019-11-18T06:46:22.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\syncfusion.xamarin.core\17.3.0.28\lib\uap10.0\Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml">
-      <PackagePath>Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml</PackagePath>
-      <Modified>2019-11-18T08:18:10.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adria\.nuget\packages\xamarin.forms\4.3.0.991211\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
-      <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
-      <Modified>2019-11-12T03:15:56.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-12-01T16:46:26.341</Modified>
+      <Modified>2020-04-20T10:02:54.137</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\Core\B4.PE3.RodriguezA.UWP.exe">
+    <AppxPackagedFile Include="D:\xam\B4.PE3.RodriguezA\B4.PE3.RodriguezA\B4.PE3.RodriguezA.UWP\bin\x86\Debug\Core\B4.PE3.RodriguezA.UWP.exe">
       <PackagePath>B4.PE3.RodriguezA.UWP.exe</PackagePath>
-      <Modified>2019-12-01T16:46:27.325</Modified>
+      <Modified>2020-04-20T10:02:55.939</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
